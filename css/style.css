@@ -203,6 +203,10 @@ header.full {
     padding-left: 10rem;
 }
 
+.artista {
+    position: relative;
+}
+
 .round {
     position: relative;
     border-radius: 50%;
@@ -222,6 +226,33 @@ header.full {
     height: 100%;
     object-fit: cover;
     object-position: 50% 50%;
+}
+
+.artista-data {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+}
+
+.artista-nome {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    font-family: Koulen, sans-serif;
+    font-size: 1.3rem;
+    padding: 0.15rem 2.5rem;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
 }
 
 /***** FOOTER *****/
