@@ -3,11 +3,23 @@
 
 /* 280, 40, 100 */
 
+/***** FONTES *****/
+@font-face {
+    font-family: Lekton;
+    src: url('../fonts/Lekton/Lekton-Regular.ttf');
+}
+@font-face {
+    font-family: Lekton;
+    font-weight: bold;
+    src: url('../fonts/Lekton/Lekton-Bold.ttf');
+}
 
 /***** RESETS *****/
 body {
     padding: 0;
     margin: 0;
+    font-family: Lekton, sans-serif;
+    font-size: 24px;
 }
 
 /***** BOTÕES *****/
@@ -17,6 +29,7 @@ body {
     text-decoration: none;
     transition: all 300ms ease-in-out;
     display: inline-block;
+    font-weight: bold;
 }
 
 .btn-pink {
