@@ -169,7 +169,7 @@ nav ul {
     display: flex;
     list-style: none;
     padding: 0;
-    gap: 3rem;
+    gap: 6rem;
 }
 
 nav li {
