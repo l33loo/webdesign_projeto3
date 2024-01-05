@@ -121,7 +121,7 @@ section .btn {
     justify-content: center;
 }
 
-section, footer {
+section, .section, footer {
   padding: 3rem 12rem;
 }
 
@@ -145,22 +145,36 @@ h3, .h3 {
 
 /***** NAV *****/
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding: 24px 48px;
+    z-index: 999;
     background: linear-gradient(#0C0F0A, transparent);
 }
 
-nav > ul {
+nav > .nav-section {
+    position: relative;
+    padding: 0 12rem;
+}
+
+nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav .logo {
+    width: 16rem;
+    color: #FF206E;
+}
+
+nav ul {
     display: flex;
     list-style: none;
     padding: 0;
-    gap: 3rem;
+    gap: 6rem;
 }
 
 nav li {
@@ -168,11 +182,60 @@ nav li {
     align-items: center;
 }
 
+nav li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    &:hover:not(.btn) {
+        text-decoration: underline;
+    }
+}
+
 /***** HEADERS *****/
 header.full {
+    position: relative;
     height: 100vh;
     width: 100vw;
     background-image: url("../img/headers/music-festival-1716625_1920.jpg");
+    z-index: 1;
+}
+
+header.full .overlay {
+    height: 75vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, #0C0F0A, transparent);
+    z-index: 2;
+}
+
+header .main-text {
+    width: 50vw;
+    z-index: 3;
+    position: absolute;
+    bottom: 10vh;
+}
+
+header .main-date {
+    color: #FBFF12;
+    font-weight: bold;
+    font-size: 4.5rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: end; */
+}
+
+header .main-slogan {
+    color: #FBFF12;
+    font-weight: bold;
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+}
+
+header .btn {
+    margin: 3rem 0;
 }
 
 /***** CARTAS NOTICIAS *****/
@@ -257,6 +320,13 @@ header.full {
     position: absolute;
     left: 0;
     bottom: 20px;
+}
+
+/***** PATROCINADORES *****/
+.patrocinadores-logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 3rem;
 }
 
 /***** FOOTER *****/
