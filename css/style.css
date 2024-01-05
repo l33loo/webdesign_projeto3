@@ -13,12 +13,16 @@
     font-weight: bold;
     src: url('../fonts/Lekton/Lekton-Bold.ttf');
 }
+@font-face {
+    font-family: Koulen;
+    src: url('../fonts/Koulen/Koulen-Regular.ttf');
+}
 
 /***** RESETS *****/
 body {
     padding: 0;
     margin: 0;
-    font-family: Lekton, sans-serif;
+    font-family: Lekton, serif;
     font-size: 24px;
 }
 
@@ -60,6 +64,11 @@ body {
         background-color: #FBFF12;
         color: #0C0F0A;
     }
+}
+
+section .btn {
+    margin: 6rem 0;
+    justify-self: center;
 }
 
 /***** CORES *****/
@@ -104,6 +113,10 @@ body {
     justify-content: space-between;
 }
 
+.flex-center {
+    justify-content: center;
+}
+
 section, footer {
   padding: 3rem 12rem;
 }
@@ -113,12 +126,17 @@ section, footer {
 }
 
 /***** TEXTO *****/
-h1, .h1 {
+h2, .h2 {
     color: #FBFF12;
+    font-family: Koulen, sans-serif;
+    font-size: 3rem;
 }
 
-h2, .h2 {
+h3, .h3 {
     color: #0C0F0A;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: bold;
 }
 
 /***** NAV *****/
@@ -141,10 +159,16 @@ nav > ul {
     gap: 3rem;
 }
 
+nav li {
+    display: flex;
+    align-items: center;
+}
+
 /***** HEADERS *****/
 header.full {
     height: 100vh;
     width: 100vw;
+    background-image: url("../img/headers/music-festival-1716625_1920.jpg");
 }
 
 /***** CARTAS NOTICIAS *****/
@@ -155,10 +179,10 @@ header.full {
 }
 
 .card-noticia {
-    padding: 10px;
+    padding: 10px 10px 0 10px;
 }
 
-.card-noticia h2 {
+.card-noticia h3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,6 +193,35 @@ header.full {
     width: 100%;
     object-fit: cover;
     vertical-align: bottom;
+}
+
+/***** CARTAS ARTISTAS *****/
+.artistas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding-left: 10rem;
+}
+
+.round {
+    position: relative;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.round::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.round img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
 /***** FOOTER *****/
