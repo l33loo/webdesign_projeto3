@@ -1,3 +1,9 @@
+/***** RESETS *****/
+body {
+    padding: 0;
+    margin: 0;
+}
+
 /***** BOTÕES *****/
 .btn {
     border-radius: 30px;
@@ -47,12 +53,36 @@
     background-color: #FFFFFF;
 }
 
+.night {
+    color: #0C0F0A;
+}
+
+.pink {
+    color: #FF206E;
+}
+
+.black {
+    color: #000;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
 /***** LAYOUT *****/
 .flex {
     display: flex;
 }
 
+.flex-between {
+    justify-content: space-between;
+}
+
 section {
+    
+}
+
+.container {
     padding: 48px;
 }
 
@@ -63,4 +93,56 @@ h1, .h1 {
 
 h2, .h2 {
     color: #0C0F0A;
+}
+
+/***** NAV *****/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 24px 48px;
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 3rem;
+}
+
+/***** HEADERS *****/
+header.full {
+    height: 100vh;
+    width: 100vw;
+}
+
+/***** CARTAS NOTICIAS *****/
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.card-noticia h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-noticia img {
+    /* width: 30%;
+    display: flex; */
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+/***** FOOTER *****/
+footer {
+    display: flex;
 }
