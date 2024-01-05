@@ -1,3 +1,4 @@
+/***** BOTÕES *****/
 .btn {
     border-radius: 30px;
     padding: 16px 44px;
@@ -27,4 +28,39 @@
         background-color: #FBFF12;
         color: #0C0F0A;
     }
+}
+
+/***** CORES *****/
+.bg-night {
+    background-color: #0C0F0A;
+}
+
+.bg-pink {
+    background-color: #FF206E;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+/***** LAYOUT *****/
+.flex {
+    display: flex;
+}
+
+section {
+    padding: 48px;
+}
+
+/***** TEXTO *****/
+h1, .h1 {
+    color: #FBFF12;
+}
+
+h2, .h2 {
+    color: #0C0F0A;
 }
