@@ -1,6 +1,6 @@
 /***** BREAKPOINTS *****/
 /* 480px, 768px, 1024px, and 1280px */
-/* index.php: 1400px
+/* index.php: tablet-834px; 1400px (nav); 1800 (artistas); 600px; 1000px
 
 /* 280, 40, 100 */
 
@@ -28,7 +28,11 @@ body {
     padding: 0;
     margin: 0;
     font-family: Lekton, serif;
-    font-size: 24px;
+    font-size: 20px;
+
+    @media screen and (min-width: 1000px) {
+        font-size: 24px;
+    }
 }
 
 a {
@@ -39,11 +43,16 @@ a {
 /***** BOTÕES *****/
 .btn {
     border-radius: 30px;
-    padding: 16px 44px;
+    padding: 10px 30px;
     text-decoration: none;
     transition: all 300ms ease-in-out;
     display: inline-block;
     font-weight: bold;
+    font-size: 1.3rem;
+
+    @media screen and (min-width: 1000px) {
+        padding: 16px 44px;
+    }
 }
 
 .btn-pink {
@@ -128,11 +137,15 @@ section .btn {
 }
 
 section, .section {
-  padding: 3rem 12vw 8rem 12vw;
+    padding: 1rem 0 2rem 0;
+
+    @media screen and (min-width: 550px) {
+        padding: 3rem 12.5vw 8rem 12.5vw;
+    }
 }
 
 .container {
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
 /***** TEXTO *****/
@@ -223,7 +236,8 @@ header.full .overlay {
 }
 
 header .main-text {
-    width: 50vw;
+    /* width: 50vw; */
+    max-width: 960px;
     z-index: 3;
     position: absolute;
     bottom: 10vh;
@@ -232,7 +246,12 @@ header .main-text {
 header .main-date {
     color: #FBFF12;
     font-weight: bold;
-    font-size: 4.5rem;
+    font-size: 2rem;
+
+    @media screen and (min-width: 1000px) {
+        font-size: 4.5rem;
+    }
+    
     /* display: flex;
     flex-direction: column;
     justify-content: end; */
@@ -241,8 +260,13 @@ header .main-date {
 header .main-slogan {
     color: #FBFF12;
     font-weight: bold;
-    font-size: 3.75rem;
-    line-height: 3.75rem;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    
+    @media screen and (min-width: 1000px) {
+        font-size: 3.75rem;
+        line-height: 3.75rem;   
+    }
 }
 
 header .btn {
@@ -252,12 +276,21 @@ header .btn {
 /***** CARTAS NOTICIAS *****/
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 2.3rem;
+
+    @media screen and (min-width: 1000px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (min-width: 1400px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .card-noticia {
     padding: 10px 10px 0 10px;
+    position: relative;
 }
 
 .card-noticia h3 {
@@ -266,23 +299,72 @@ header .btn {
     align-items: center;
 }
 
-.card-noticia img {
+.card-noticia-img {
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.card-noticia-img::after {
+    content: "";
+    display: block;
+    padding-bottom: 89%;
+}
+
+.card-noticia-img > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+/* .card-noticia img {
     height: 20vw;
     width: 100%;
     object-fit: cover;
     vertical-align: bottom;
-}
+} */
 
 /***** CARTAS ARTISTAS *****/
 .artistas {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    /* grid-template-columns: 1fr; */
     gap: 5.5rem 2rem;
-    padding-left: 10rem;
+    /* padding-left: 15vw;
+    padding-right: 15vw; */
+
+    /* @media screen and (min-width: 970px) {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    @media screen and (min-width: 1000px) {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    @media screen and (min-width: 1220px) {
+        padding-left: 10rem;
+        padding-right: 0;
+    }
+
+    @media screen and (min-width: 1400px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 0;
+    }
+
+    @media screen and (min-width: 1800px) {
+        padding-left: 10rem;
+    } */
 }
 
 .artista {
     position: relative;
+    min-width: 200px;
+    width: 386px;
 }
 
 .round {
@@ -316,8 +398,8 @@ header .btn {
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    top: 35px;
-    right: 22px;
+    top: 9%;
+    right: 6%;
 }
 
 .artista-data > .artista-data-dia {
@@ -343,13 +425,24 @@ header .btn {
 /***** PATROCINADORES *****/
 .patrocinadores-logos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 2vw 3vw;
+
+    @media screen and (min-width: 800px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    @media screen and (min-width: 1000px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    @media screen and (min-width: 1400px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }  
 }
 
 /***** FOOTER *****/
 footer {
-    display: flex;
     font-family: Inter, sans-serif;
     font-size: 1.2rem;
     padding: 3rem 12vw;
@@ -357,10 +450,10 @@ footer {
 
 footer > .container {
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .footer-social {
-    display: flex;
     align-items: center;
     gap: 1.5em;
 }
