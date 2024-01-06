@@ -316,8 +316,15 @@ header .btn {
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    top: 30px;
-    right: 10px;
+    top: 35px;
+    right: 22px;
+}
+
+.artista-data > .artista-data-dia {
+    font-weight: bold;
+    font-size: 1.7em;
+    line-height: 0.6em;
+    padding-top: 0.9rem;
 }
 
 .artista-nome {
