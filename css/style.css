@@ -181,20 +181,6 @@ header.full {
     margin-bottom: 6rem;
 }
 
-.card-titulo {
-  padding: 10px;  
-}
-
-.noticia {
-    display: flex;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-}
-
-.card-titulo {
-    padding: 10px;
-}
-
 /***** FOOTER *****/
 footer {
     display: flex;
@@ -211,7 +197,7 @@ footer {
     margin-top: 6rem;
 }
 
-/*** BREADCRUMBS ****/
+/*** CARD NOTICIA ***/
 .breadcrumbs {
  list-style: none;
  padding: 10px 16px;
@@ -231,3 +217,32 @@ footer {
     color: yellow;
 }
 
+/*** Contactos ***/
+.texto {
+    width: 21em;
+    height: 30em;
+}
+
+.imagem {
+    width: 21em;
+    height: 25em;
+}
+
+.container-contactos {
+    display: flex;
+    height: 113.4vh;
+    align-items: center;
+}
+
+
+/**** Bilhetes ***/
+.btn-bilhetes {
+    display: block;
+    margin: auto;
+}
+
+.cards-bilhetes {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
