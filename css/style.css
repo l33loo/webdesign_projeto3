@@ -1,5 +1,6 @@
 /***** BREAKPOINTS *****/
 /* 480px, 768px, 1024px, and 1280px */
+/* index.php: 1400px
 
 /* 280, 40, 100 */
 
@@ -127,7 +128,7 @@ section .btn {
 }
 
 section, .section {
-  padding: 3rem 12rem 8rem 12rem;
+  padding: 3rem 12vw 8rem 12vw;
 }
 
 .container {
@@ -160,7 +161,7 @@ nav {
 
 nav > .nav-section {
     position: relative;
-    padding: 0 12rem;
+    padding: 0 5vw;
 }
 
 nav .nav-container {
@@ -179,7 +180,7 @@ nav ul {
     display: flex;
     list-style: none;
     padding: 0;
-    gap: 6rem;
+    gap: 5vw;
 }
 
 nav li {
@@ -336,7 +337,7 @@ header .btn {
 .patrocinadores-logos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 2rem 3rem;
+    gap: 2vw 3vw;
 }
 
 /***** FOOTER *****/
@@ -344,7 +345,7 @@ footer {
     display: flex;
     font-family: Inter, sans-serif;
     font-size: 1.2rem;
-    padding: 3rem 12rem;
+    padding: 3rem 12vw;
 }
 
 footer > .container {
