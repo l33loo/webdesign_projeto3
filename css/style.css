@@ -30,6 +30,11 @@ body {
     font-size: 24px;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /***** BOTÕES *****/
 .btn {
     border-radius: 30px;
@@ -186,9 +191,14 @@ nav li a {
     text-decoration: none;
     color: #FFFFFF;
     font-weight: bold;
+    transition: color 300ms ease-in-out;
     &:hover:not(.btn) {
-        text-decoration: underline;
+        color: #FBFF12;
     }
+}
+
+nav li a.active {
+    text-decoration: underline;
 }
 
 /***** HEADERS *****/
@@ -346,9 +356,15 @@ footer > .container {
     gap: 1.5em;
 }
 
-.footer-links {
+.footer-links a {
     display: flex;
     flex-direction: column;
     justify-content: end;
     line-height: 2em;
+    color: #FFFFFF;
+    transition: color 300ms ease-in-out;
+
+    &:hover {
+        color: #FBFF12;
+    }
 }
