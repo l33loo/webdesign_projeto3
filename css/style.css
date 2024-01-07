@@ -519,10 +519,11 @@ header .main-btn {
 /***** FOOTER *****/
 footer {
     font-family: Inter, sans-serif;
-    font-size: 1.2rem;
-    padding: 6rem 0 6.5rem;
+    font-size: 1rem;
+    padding: 5.5rem 0 6rem;
 
     @media screen and (min-width: 550px) {
+        font-size: 1.2rem;
         padding: 8rem 12vw;
     }
 }
@@ -554,9 +555,11 @@ footer > .container {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-top: 3rem;
 
     @media screen and (min-width: 600px) {
         align-items: start;
+        padding-top: 0;
     }
 }
 
@@ -564,11 +567,15 @@ footer > .container {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    line-height: 2em;
+    line-height: 2.5em;
     color: #FFFFFF;
     transition: color 300ms ease-in-out;
 
     &:hover {
         color: #FBFF12;
+    }
+
+    @media screen and (min-width: 550px) {
+        line-height: 2em;
     }
 }
