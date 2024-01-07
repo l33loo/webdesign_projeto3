@@ -52,7 +52,7 @@ a {
     box-sizing: border-box;
 
     @media screen and (min-width: 1000px) {
-        padding: 16px 44px;
+        padding: 14px 44px;
     }
 }
 
@@ -145,7 +145,7 @@ section .btn {
 }
 
 section, .section {
-    padding: 1rem 0 2rem 0;
+    padding: 2.5rem 0 3.5rem;
 
     @media screen and (min-width: 550px) {
         padding: 3rem 12.5vw 8rem 12.5vw;
@@ -153,7 +153,7 @@ section, .section {
 }
 
 .container {
-    padding: 1.5rem;
+    padding: 0 1.5rem;
 }
 
 /***** TEXTO *****/
@@ -182,14 +182,18 @@ nav {
 
 nav > .nav-section {
     position: relative;
-    padding: 0 5vw;
+    padding: 0;
+
+    @media screen and (min-width: 600px) {
+        padding: 0 5vw;
+    }
 }
 
 nav .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
 }
 
 nav .logo {
@@ -225,6 +229,8 @@ nav li a.active {
 
 /***** HEADERS *****/
 header.full {
+    display: flex;
+    align-items: end;
     position: relative;
     height: 100vh;
     width: 100vw;
@@ -240,15 +246,16 @@ header.full .overlay {
     left: 0;
     right: 0;
     background: linear-gradient(to top, #0C0F0A, transparent);
-    z-index: 2;
+    z-index: -100;
 }
 
 header .main-text {
     /* width: 50vw; */
-    max-width: 800px;
-    z-index: 3;
-    position: absolute;
-    bottom: 10vh;
+    max-width: 90%;
+
+    @media screen and (min-width: 1000px) {
+        max-width: 800px;
+    }
 }
 
 header .main-date {
@@ -258,6 +265,7 @@ header .main-date {
 
     @media screen and (min-width: 1000px) {
         font-size: 4.5rem;
+        line-height: 7rem;
     }
     
     /* display: flex;
@@ -269,16 +277,21 @@ header .main-slogan {
     color: #FBFF12;
     font-weight: bold;
     font-size: 1.7rem;
-    line-height: 1.7rem;
+    line-height: normal;
     
     @media screen and (min-width: 1000px) {
-        font-size: 3.75rem;
-        line-height: 3.75rem;   
+        font-size: 3.9rem;
     }
 }
 
-header .btn {
-    margin: 3rem 0;
+header .main-btn {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0 2rem;
+
+    @media screen and (min-width: 600px) {
+        justify-content: start;
+    }
 }
 
 /***** CARTAS NOTICIAS *****/
@@ -420,8 +433,8 @@ header .btn {
 
 .artista-data > .artista-data-dia {
     font-weight: bold;
-    font-size: 1.7em;
-    line-height: 0.6em;
+    font-size: 2.6rem;
+    line-height: 1.7rem;
     padding-top: 0.9rem;
 }
 
