@@ -95,7 +95,11 @@ a {
 }
 
 section .btn {
-    margin: 6rem auto 0;
+    margin: 4rem auto 0;
+
+    @media screen and (min-width: 600px) {
+        margin: 6rem auto 0;
+    }
 }
 
 /***** CORES *****/
@@ -145,7 +149,8 @@ section .btn {
 }
 
 section, .section {
-    padding: 2.5rem 0 3.5rem;
+    /* padding: 2.5rem 0 3.5rem; */
+    padding: 0.5rem 0 5.5rem;
 
     @media screen and (min-width: 550px) {
         padding: 3rem 12.5vw 8rem 12.5vw;
@@ -160,7 +165,11 @@ section, .section {
 h2, .h2 {
     color: #FBFF12;
     font-family: Koulen, sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
+
+    @media screen and (min-width: 600px) {
+        font-size: 3rem;
+    }
 }
 
 h3, .h3 {
@@ -188,7 +197,7 @@ nav {
 
 nav > .nav-section {
     position: relative;
-    padding: 0;
+    padding: 0.4rem 0;
 
     @media screen and (min-width: 600px) {
         padding: 0 5vw;
@@ -200,18 +209,30 @@ nav .nav-container {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
+
+    @media screen and (min-width: 800px) {
+        padding: 1rem 1.5rem;
+    }
 }
 
 nav .logo {
-    width: 16rem;
+    width: 7.1rem;
     color: #FF206E;
+
+    @media screen and (min-width: 600px) {
+        width: 16rem;
+    }
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    gap: 5vw;
+    display: none;
+
+    @media screen and (min-width: 800px) {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        gap: 5vw;
+    }
 }
 
 nav li {
@@ -295,7 +316,7 @@ header .main-slogan {
 header .main-btn {
     display: flex;
     justify-content: center;
-    padding: 2.5rem 0 2rem;
+    padding: 2.5rem 0 0;
 
     @media screen and (min-width: 600px) {
         justify-content: start;
@@ -370,9 +391,13 @@ header .main-btn {
     justify-content: end;
     flex-wrap: wrap;
     /* grid-template-columns: 1fr; */
-    gap: 5.5rem 2rem;
+    gap: 2rem;
     /* padding-left: 15vw;
     padding-right: 15vw; */
+
+    @media screen and (min-width: 600px) {
+        gap: 5.5rem 2rem;
+    }
 
     /* @media screen and (min-width: 970px) {
         grid-template-columns: 1fr 1fr;
