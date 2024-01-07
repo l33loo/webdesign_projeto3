@@ -218,6 +218,22 @@ footer {
 }
 
 /*** Contactos ***/
+.metade {
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.esquerda {
+    width: 50%;
+}
+
+.direita{
+    width: 50%;
+}
+
 .texto {
     width: 21em;
     height: 30em;
@@ -245,4 +261,12 @@ footer {
  display: flex;
  justify-content: center;
  align-items: center;
+ gap: 2rem;
+}
+
+/*** Formulário Compra ****/
+.metodo-compra {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
 }
