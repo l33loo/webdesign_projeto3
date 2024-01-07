@@ -153,7 +153,7 @@ section, .section {
     padding: 2rem 0 5.5rem;
 
     @media screen and (min-width: 550px) {
-        padding: 3rem 12.5vw 8rem 12.5vw;
+        padding: 6rem 12.5vw 10rem 12.5vw;
     }
 }
 
@@ -320,7 +320,7 @@ header .main-btn {
 
     @media screen and (min-width: 600px) {
         justify-content: start;
-        padding: 3rem 0 2rem;
+        padding: 3rem 0 0;
     }
 }
 
@@ -504,17 +504,36 @@ header .main-btn {
 footer {
     font-family: Inter, sans-serif;
     font-size: 1.2rem;
-    padding: 3rem 12vw;
+    padding: 6rem 0 6.5rem;
+
+    @media screen and (min-width: 550px) {
+        padding: 8rem 12vw;
+    }
 }
 
 footer > .container {
-    width: 100%;
+    /* width: 100%; */
     flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (min-width: 600px) {
+        justify-content: space-between;
+    }
 }
 
 .footer-social {
     align-items: center;
     gap: 1.5em;
+}
+
+.footer-links {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (min-width: 600px) {
+        align-items: start;
+    }
 }
 
 .footer-links a {
