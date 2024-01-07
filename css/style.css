@@ -166,8 +166,14 @@ h2, .h2 {
 h3, .h3 {
     color: #0C0F0A;
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: normal;
     font-weight: bold;
+    margin: 1.3rem 0;
+
+    @media screen and (min-width: 600px) {
+        line-height: 2.5rem;
+        margin: 1.5rem 0;
+    }
 }
 
 /***** NAV *****/
@@ -454,12 +460,8 @@ header .main-btn {
 /***** PATROCINADORES *****/
 .patrocinadores-logos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 2vw 3vw;
-
-    @media screen and (min-width: 800px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
 
     @media screen and (min-width: 1000px) {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
