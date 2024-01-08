@@ -631,6 +631,7 @@ header .main-btn {
 
     @media screen and (min-width: 930px) {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1.7vw 2.5vw;
     }
 
     @media screen and (min-width: 1200px) {
