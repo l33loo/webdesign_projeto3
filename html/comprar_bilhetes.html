@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,73 +7,29 @@
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="bg-night">
-
-        <section>
-    <div class="container">
-        <h1>Formulário de Compra</h1>
-    <table>
-        <tr>
-            <td style="color: white;">Nome Completo:</td>            
-        </tr>
-        <tr>
-            <td style="color: white;"><input type="text"></td>
-        </tr>
-        <tr>
-            <td style="color: white;">Email:</td>
-        </tr>
-        <tr>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td style="color: white;">Morada:</td>
-        </tr>
-        <tr>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td style="color: white;">Tipo de Bilhete:</td>
-        </tr>
-        <tr class="metodo-compra">
-            <td style="color: white;"><input type="checkbox" name="" id="">Geral</td>
-            <td style="color: white;"><input type="checkbox">Diário</td>
-            <td><select name="Dia" id="dia">
-                <option value="">Escolha o dia</option>
-                <option value="">19</option>
-                <option value="">20</option>
-                <option value="">21</option>
-            </select></td>
-        </tr>
-        <tr>
-            <td style="color: white;">Quantidade: <input type="number" min="0"></td>
-        </tr>
-        <tr>
-            <td style="color: white;">Proteção de reembolso: <select name="" id="">
-                <option value="">Sim</option>
-                <option value="">Não</option>
-            </select>
-            </td>
-        </tr>
-        <tr>
-            <td style="color: white;">Subtotal:</td>
-        </tr>
-        <tr>
-            <td style="color: white;">Total (com IVA de 16%) :</td>
-        </tr>
-    </table>
-</div> <br>
-<div class="container">
-    <table>
-        <tr>
-            <td style="color: white;"><u>Método de Pagamento</u></td>
-        </tr>
-        <tr class="metodo-compra">
-            <td style="color: white;"><input type="checkbox">Visa</td>
-            <td style="color: white;"><input type="checkbox">Mastercard</td>
-            <td style="color: white;"><input type="checkbox">Multibanco</td>
-        </tr>
-    </table>
-</div>
-</section>
-    <footer class="bg-black"><center>PLACEHOLDER</center></footer>
+    <section>
+        <h1>Comprar Bilhetes</h1>
+    </section>
+    <section>
+        <div class="form">
+            <p>Nome:</p>
+                <input class="nome" type="text">
+            <p>Email:</p>
+                <input class="email" type="text">
+            <p>Telefone:</p>
+                <input class="telefone" type="text">
+            <p>Morada:</p>
+                <input class="morada" type="text">
+            <p>Tipo de Bilhete:</p>
+        <div class="checkbox-label">
+        <div>
+            <input class="checkbox" type="checkbox" name="Diário" id=""> <b>Diário</b>
+        </div>
+        <div>
+            <input class="checkbox" type="checkbox" name="Geral" id=""> <b>Geral</b>
+        </div>
+        </div>
+        </div>
+    </section>
 </body>
 </html>
