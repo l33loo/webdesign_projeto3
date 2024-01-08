@@ -489,8 +489,12 @@ header .main-btn {
     min-width: 200px;
     width: 386px;
 
-    @media screen and (min-width: 650px) and (max-width: 1200px) {
+    @media screen and (min-width: 800px) and (max-width: 1150px) {
         width: 41vw;
+    }
+
+    @media screen and (min-width: 1500px) and (max-width: 1699px) {
+        width: 22vw;
     }
 }
 
