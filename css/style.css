@@ -1,6 +1,8 @@
 /***** BREAKPOINTS *****/
 /* 480px, 768px, 1024px, and 1280px */
-/* index.php: tablet-834px; 1400px (nav); 1800 (artistas); 600px; 1000px
+/* index.php: tablet-834px*1194 => 810px; 1400px (nav); 1800 (artistas); 600px; 1000px
+
+Mobile: 360px x 640 px
 
 /* 280, 40, 100 */
 
@@ -97,7 +99,11 @@ a {
 section .btn {
     margin: 4rem auto 0;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 650px) {
+        margin: 5rem auto 0;
+    }
+
+    @media screen and (min-width: 1000px) {
         margin: 6rem auto 0;
     }
 }
@@ -152,8 +158,18 @@ section, .section {
     /* padding: 2.5rem 0 3.5rem; */
     padding: 2rem 0 5.5rem;
 
-    @media screen and (min-width: 550px) {
-        padding: 6rem 12.5vw 10rem 12.5vw;
+    @media screen and (min-width: 650px) {
+        padding: 2rem 4vw 6rem;
+    }
+
+    @media screen and (min-width: 1000px) {
+        padding: 6rem 12.5vw 10rem;
+    }
+}
+
+section h2 {
+    @media screen and (min-width: 650px) and (max-width: 999px) {
+        padding: 0 8.5vw;
     }
 }
 
@@ -167,7 +183,11 @@ h2, .h2 {
     font-family: Koulen, sans-serif;
     font-size: 1.75rem;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 650px) {
+        font-size: 2.7rem;
+    }
+
+    @media screen and (min-width: 1000px) {
         font-size: 3rem;
     }
 }
@@ -227,7 +247,7 @@ nav .logo {
 nav ul {
     display: none;
 
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: 1350px) {
         display: flex;
         list-style: none;
         padding: 0;
@@ -278,9 +298,28 @@ header.full .overlay {
     z-index: -100;
 }
 
+header.full > .main {
+        /* padding: 2.5rem 0 3.5rem; */
+    padding: 2rem 0 16vh;
+
+    @media screen and (min-width: 650px) and (max-width: 999px) {
+        padding: 2rem 3rem 13vh 12.5vw;
+        /* padding-bottom: 13vh;
+        padding-right: 3rem; */
+    }
+
+    @media screen and (min-width: 1000px) {
+        padding: 6rem 12.5vw 16vh;
+    }
+}
+
 header .main-text {
     /* width: 50vw; */
     max-width: 90%;
+
+    @media screen and (min-width: 650px) {
+        max-width: 100%;
+    }
 
     @media screen and (min-width: 1000px) {
         max-width: 800px;
@@ -291,6 +330,10 @@ header .main-date {
     color: #FBFF12;
     font-weight: bold;
     font-size: 2rem;
+
+    @media screen and (min-width: 650px) {
+        font-size: 4rem;
+    }
 
     @media screen and (min-width: 1000px) {
         font-size: 4.5rem;
@@ -307,6 +350,14 @@ header .main-slogan {
     font-weight: bold;
     font-size: 1.7rem;
     line-height: normal;
+
+    @media screen and (min-width: 650px) {
+        font-size: 3rem;
+    }
+
+    @media screen and (min-width: 650px) and (max-width: 999px) {
+        width: 90%;
+    }
     
     @media screen and (min-width: 1000px) {
         font-size: 3.9rem;
@@ -318,8 +369,12 @@ header .main-btn {
     justify-content: center;
     padding: 2.5rem 0 0;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 650px) {
         justify-content: start;
+        padding: 4rem 0 0;
+    }
+
+    @media screen and (min-width: 1000px) {
         padding: 3rem 0 0;
     }
 }
@@ -395,7 +450,12 @@ header .main-btn {
     /* padding-left: 15vw;
     padding-right: 15vw; */
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 650px) and (max-width: 999px) {
+        gap: 2rem 1rem;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 1000px) {
         gap: 5.5rem 2rem;
     }
 
@@ -428,6 +488,10 @@ header .main-btn {
     position: relative;
     min-width: 200px;
     width: 386px;
+
+    @media screen and (min-width: 650px) and (max-width: 1000px) {
+        width: 41vw;
+    }
 }
 
 .round {
@@ -522,7 +586,11 @@ footer {
     font-size: 1rem;
     padding: 5.5rem 0 6rem;
 
-    @media screen and (min-width: 550px) {
+    @media screen and (min-width: 650px) {
+        padding: 4rem 4vw;
+    }
+
+    @media screen and (min-width: 1000px) {
         font-size: 1.2rem;
         padding: 8rem 12vw;
     }
@@ -546,7 +614,11 @@ footer > .container {
 .footer-social img {
     width: 38px;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 650px) {
+        width: 33px;
+    }
+
+    @media screen and (min-width: 1000px) {
         width: auto;
     }
 }
@@ -557,7 +629,7 @@ footer > .container {
     flex-direction: column;
     padding-top: 3rem;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 650px) {
         align-items: start;
         padding-top: 0;
     }
@@ -575,7 +647,11 @@ footer > .container {
         color: #FBFF12;
     }
 
-    @media screen and (min-width: 550px) {
+    @media screen and (min-width: 650px) {
+        line-height: 2.4em;
+    }
+
+    @media screen and (min-width: 1000px) {
         line-height: 2em;
     }
 }
