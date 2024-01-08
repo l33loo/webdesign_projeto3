@@ -470,16 +470,19 @@ header .main-btn {
 /***** CARTAS ARTISTAS *****/
 .artistas {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     flex-wrap: wrap;
     /* grid-template-columns: 1fr; */
     gap: 2rem;
     /* padding-left: 15vw;
     padding-right: 15vw; */
 
-    @media screen and (min-width: 650px) and (max-width: 999px) {
+    @media screen and (min-width: 650px) {
         gap: 2rem 1rem;
-        justify-content: center;
+    }
+
+    @media screen and (min-width: 1000px) {
+        justify-content: end;
     }
 
     @media screen and (min-width: 1200px) {
@@ -515,6 +518,10 @@ header .main-btn {
     position: relative;
     min-width: 200px;
     width: 386px;
+
+    @media screen and (min-width: 700px) and (max-width: 799px) {
+        width: 41vw;
+    }
 
     @media screen and (min-width: 800px) and (max-width: 1150px) {
         width: 41vw;
