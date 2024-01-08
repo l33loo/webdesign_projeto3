@@ -308,11 +308,11 @@ header.full > .main {
     padding: 2rem 0 16vh;
 
     @media screen and (min-width: 650px) {
-        padding: 2rem 3rem 13vh 12.5vw;
+        padding: 2rem 3rem 14vh 11.5vw;
     }
 
     @media screen and (min-width: 924px) {
-        padding: 2rem 3rem 13vh 12.5vw;
+        padding: 2rem 3rem 15vh 12.5vw;
         /* padding-bottom: 13vh;
         padding-right: 3rem; */
     }
@@ -343,7 +343,7 @@ header .main-date {
         font-size: 3rem;
     }
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 834px) {
         font-size: 4rem;
     }
 
@@ -367,7 +367,7 @@ header .main-slogan {
         font-size: 2.5rem;
     }
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 834px) {
         font-size: 3rem;
         width: 90%;
     }
