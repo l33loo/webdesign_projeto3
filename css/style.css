@@ -1,5 +1,8 @@
 /***** BREAKPOINTS *****/
 /* 480px, 768px, 1024px, and 1280px */
+/* index.php: tablet-834px*1194 => 810px; 1400px (nav); 1800 (artistas); 600px; 1200px
+
+Mobile: 360px x 640 px
 
 /* 280, 40, 100 */
 
@@ -27,52 +30,87 @@ body {
     padding: 0;
     margin: 0;
     font-family: Lekton, serif;
-    font-size: 24px;
+    font-size: 20px;
+    overflow-x: hidden;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 24px;
+    }
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /***** BOTÕES *****/
 .btn {
     border-radius: 30px;
-    padding: 16px 44px;
+    padding: 10px 30px;
     text-decoration: none;
     transition: all 300ms ease-in-out;
     display: inline-block;
     font-weight: bold;
+    font-size: 1rem;
+    box-sizing: border-box;
+
+    @media screen and (min-width: 360px) {
+        font-size: 1.4rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 14px 44px;
+    }
 }
 
 .btn-pink {
     background-color: #FF206E;
+    border: 2px solid #FF206E;
     color: #0C0F0A;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
     &:hover {
         background-color: #FBFF12;
+        border: 2px solid #FBFF12;
     }
 }
 
 .btn-yellow {
     background-color: #FBFF12;
+    border: 2px solid #FBFF12;
     color: #0C0F0A;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
     &:hover {
         background-color: transparent;
-        border: 2px solid #FBFF12;
         color: #FBFF12;
+        box-shadow: none;
     }
 }
 
 .btn-yellow-ghost {
     border: 2px solid #FBFF12;
     color: #FBFF12;
+    box-shadow: none;
+    background-color: none;
 
     &:hover {
         background-color: #FBFF12;
         color: #0C0F0A;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
 }
 
 section .btn {
-    margin: 6rem 0;
-    justify-self: center;
+    margin: 4rem auto 0;
+
+    @media screen and (min-width: 650px) {
+        margin: 5rem auto 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: 6rem auto 0;
+    }
 }
 
 /***** CORES *****/
@@ -121,26 +159,55 @@ section .btn {
     justify-content: center;
 }
 
-section, .section, footer {
-  padding: 3rem 12rem;
+section, .section {
+    /* padding: 2.5rem 0 3.5rem; */
+    padding: 2rem 0 5.5rem;
+
+    @media screen and (min-width: 650px) {
+        padding: 2rem 4vw 6rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 6rem 12.5vw 10rem;
+    }
+}
+
+section h2 {
+    @media screen and (min-width: 650px) and (max-width: 999px) {
+        padding: 0 8.5vw;
+    }
 }
 
 .container {
-    padding: 2rem;
+    padding: 0 1.6rem;
 }
 
 /***** TEXTO *****/
 h2, .h2 {
     color: #FBFF12;
     font-family: Koulen, sans-serif;
-    font-size: 3rem;
+    font-size: 1.75rem;
+
+    @media screen and (min-width: 650px) {
+        font-size: 2.7rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 3rem;
+    }
 }
 
 h3, .h3 {
     color: #0C0F0A;
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: normal;
     font-weight: bold;
+    margin: 1.3rem 0;
+
+    @media screen and (min-width: 600px) {
+        line-height: 2.5rem;
+        margin: 1.5rem 0;
+    }
 }
 
 /***** NAV *****/
@@ -155,26 +222,42 @@ nav {
 
 nav > .nav-section {
     position: relative;
-    padding: 0 12rem;
+    padding: 0.4rem 0;
+
+    @media screen and (min-width: 600px) {
+        padding: 0 5vw;
+    }
 }
 
 nav .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
+
+    @media screen and (min-width: 800px) {
+        padding: 1rem 1.5rem;
+    }
 }
 
 nav .logo {
-    width: 16rem;
+    width: 7.1rem;
     color: #FF206E;
+
+    @media screen and (min-width: 600px) {
+        width: 16rem;
+    }
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    gap: 6rem;
+    display: none;
+
+    @media screen and (min-width: 1350px) {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        gap: 5vw;
+    }
 }
 
 nav li {
@@ -186,42 +269,89 @@ nav li a {
     text-decoration: none;
     color: #FFFFFF;
     font-weight: bold;
+    transition: color 300ms ease-in-out;
     &:hover:not(.btn) {
-        text-decoration: underline;
+        color: #FBFF12;
     }
+}
+
+nav li a.active {
+    text-decoration: underline;
 }
 
 /***** HEADERS *****/
 header.full {
+    display: flex;
+    align-items: end;
     position: relative;
     height: 100vh;
     width: 100vw;
     background-image: url("../img/headers/music-festival-1716625_1920.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
     z-index: 1;
 }
 
 header.full .overlay {
-    height: 75vh;
+    height: 85vh;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     background: linear-gradient(to top, #0C0F0A, transparent);
-    z-index: 2;
+    z-index: -100;
+}
+
+header.full > .main {
+        /* padding: 2.5rem 0 3.5rem; */
+    padding: 2rem 0 16vh;
+
+    @media screen and (min-width: 650px) {
+        padding: 2rem 3rem 14vh 11.5vw;
+    }
+
+    @media screen and (min-width: 924px) {
+        padding: 2rem 3rem 15vh 12.5vw;
+        /* padding-bottom: 13vh;
+        padding-right: 3rem; */
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 6rem 12.5vw 16vh;
+    }
 }
 
 header .main-text {
-    width: 50vw;
-    z-index: 3;
-    position: absolute;
-    bottom: 10vh;
+    max-width: 90%;
+
+    @media screen and (min-width: 1048px) {
+        max-width: 80%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 800px;
+    }
 }
 
 header .main-date {
     color: #FBFF12;
     font-weight: bold;
-    font-size: 4.5rem;
+    font-size: 2rem;
+
+    @media screen and (min-width: 650px) {
+        font-size: 3rem;
+    }
+
+    @media screen and (min-width: 834px) {
+        font-size: 4rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 4.5rem;
+        line-height: 7rem;
+    }
+    
     /* display: flex;
     flex-direction: column;
     justify-content: end; */
@@ -230,23 +360,89 @@ header .main-date {
 header .main-slogan {
     color: #FBFF12;
     font-weight: bold;
-    font-size: 3.75rem;
-    line-height: 3.75rem;
+    font-size: 1.7rem;
+    line-height: normal;
+
+    @media screen and (min-width: 650px) {
+        font-size: 2.5rem;
+    }
+
+    @media screen and (min-width: 834px) {
+        font-size: 3rem;
+        width: 90%;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        font-size: 3.9rem;
+    }
 }
 
-header .btn {
-    margin: 3rem 0;
+header .main-btn {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 0 0;
+
+    @media screen and (min-width: 650px) {
+        justify-content: start;
+        padding: 4rem 0 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 3rem 0 0;
+    }
 }
 
 /***** CARTAS NOTICIAS *****/
 .cards {
+    overflow-x: hidden;
+
+    @media screen and (min-width: 650px) {
+        margin-left: calc(-1.6rem - 4vw);
+        overflow-x: scroll;
+        width: 100vw;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+        overflow-x: hidden;
+        width: auto;
+    }
+}
+
+.cards-inner {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+
+    @media screen and (min-width: 650px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.1rem;
+        width: 128vw;
+        margin-left: -14vw;
+    }
+
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+        width: auto;
+        margin-left: 0;
+    }
+
+    @media screen and (min-width: 1500px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .card-noticia {
+    display: block;
     padding: 10px 10px 0 10px;
+    position: relative;
+
+    &:hover {
+        .card-noticia-img > img {
+            transform: scale(1.3);
+        }
+    }
 }
 
 .card-noticia h3 {
@@ -255,23 +451,97 @@ header .btn {
     align-items: center;
 }
 
-.card-noticia img {
+.card-noticia-img {
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.card-noticia-img::after {
+    content: "";
+    display: block;
+    padding-bottom: 89%;
+}
+
+.card-noticia-img > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    transition: all 300ms ease-in-out;
+}
+
+/* .card-noticia img {
     height: 20vw;
     width: 100%;
     object-fit: cover;
     vertical-align: bottom;
-}
+} */
 
 /***** CARTAS ARTISTAS *****/
 .artistas {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* grid-template-columns: 1fr; */
     gap: 2rem;
-    padding-left: 10rem;
+    /* padding-left: 15vw;
+    padding-right: 15vw; */
+
+    @media screen and (min-width: 650px) {
+        gap: 2rem 1rem;
+    }
+
+    @media screen and (min-width: 1000px) {
+        justify-content: end;
+    }
+
+    @media screen and (min-width: 1200px) {
+        gap: 5.5rem 2rem;
+    }
+
+    /* @media screen and (min-width: 970px) {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    @media screen and (min-width: 1220px) {
+        padding-left: 10rem;
+        padding-right: 0;
+    }
+
+    @media screen and (min-width: 1400px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 0;
+    }
+
+    @media screen and (min-width: 1800px) {
+        padding-left: 10rem;
+    } */
 }
 
 .artista {
     position: relative;
+    min-width: 200px;
+    width: 386px;
+
+    @media screen and (min-width: 700px) and (max-width: 799px) {
+        width: 41vw;
+    }
+
+    @media screen and (min-width: 800px) and (max-width: 1150px) {
+        width: 41vw;
+    }
+
+    @media screen and (min-width: 1500px) and (max-width: 1699px) {
+        width: 22vw;
+    }
 }
 
 .round {
@@ -300,13 +570,32 @@ header .btn {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 73px;
-    height: 73px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    top: 30px;
-    right: 10px;
+    top: 8%;
+    right: 6%;
+
+    @media screen and (min-width: 600px) {
+        width: 73px;
+        height: 73px;
+        top: 9%;
+    }
+}
+
+.artista-data > .artista-data-dia {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2rem;
+    padding-top: 0.7rem;
+    
+    @media screen and (min-width: 600px) {
+        font-size: 2.6rem;
+        line-height: 1.7rem;
+        padding-top: 0.9rem;
+    }
 }
 
 .artista-nome {
@@ -316,39 +605,131 @@ header .btn {
     border-radius: 100px;
     font-family: Koulen, sans-serif;
     font-size: 1.3rem;
-    padding: 0.15rem 2.5rem;
+    padding: 0 2rem;
     position: absolute;
     left: 0;
     bottom: 20px;
+
+    @media screen and (min-width: 600px) {
+        padding: 0.15rem 2.5rem;
+    }
 }
 
 /***** PATROCINADORES *****/
 .patrocinadores-logos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2vw 3vw;
+
+    @media screen and (min-width: 360px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    @media screen and (min-width: 870px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    @media screen and (min-width: 930px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1.7vw 2.5vw;
+    }
+
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    @media screen and (min-width: 1400px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }  
 }
 
 /***** FOOTER *****/
 footer {
-    display: flex;
     font-family: Inter, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 5.5rem 0 6rem;
+
+    @media screen and (min-width: 500px) {
+        font-size: 1.2rem;
+    }
+
+    @media screen and (min-width: 650px) {
+        font-size: 1.2rem;
+        padding: 4rem 4vw;
+    }
+
+    @media screen and (min-width: 834px) {
+        font-size: 1rem;
+    }
+
+    @media screen and (min-width: 1000px) {
+        font-size: 1.2rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 8rem 12vw;
+    }
 }
 
 footer > .container {
-    width: 100%;
+    /* width: 100%; */
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 834px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .footer-social {
-    display: flex;
     align-items: center;
-    gap: 2em;
+    gap: 1.5em;
+}
+
+.footer-social img {
+    width: 38px;
+
+    @media screen and (min-width: 834px) {
+        width: 33px;
+    }
+
+    @media screen and (min-width: 1400px) {
+        width: auto;
+    }
 }
 
 .footer-links {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3rem;
+
+    @media screen and (min-width: 834px) {
+        align-items: start;
+        padding-top: 0;
+    }
+}
+
+.footer-links a {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    line-height: 2em;
+    line-height: 2.5em;
+    color: #FFFFFF;
+    transition: color 300ms ease-in-out;
+
+    &:hover {
+        color: #FBFF12;
+    }
+
+    @media screen and (min-width: 834px) {
+        line-height: 2.4em;
+    }
+
+    @media screen and (min-width: 1400px) {
+        line-height: 2em;
+    }
 }
