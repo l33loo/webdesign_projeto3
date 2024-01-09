@@ -248,6 +248,21 @@ footer {
 .icon { 
     margin: 10px;
     padding-top:5px;
+ }
+.texto {
+    width: 21em;
+    height: 30em;
+}
+
+.imagem {
+    width: 21em;
+    height: 25em;
+}
+
+.container-contactos {
+    display: flex;
+    height: 113.4vh;
+    align-items: center;
 }
 
 
@@ -320,4 +335,14 @@ footer {
 .checkbox {
     width: 1.5rem;
     height: 1.5rem;
+ }
+.btn-bilhetes {
+    display: block;
+    margin: auto;
+}
+
+.cards-bilhetes {
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
