@@ -202,7 +202,7 @@ h3, .h3 {
     font-size: 1.5rem;
     line-height: normal;
     font-weight: bold;
-    margin: 1.3rem 0;
+    margin: 1.2rem 0;
 
     @media screen and (min-width: 600px) {
         line-height: 2.5rem;
@@ -393,7 +393,7 @@ header .main-btn {
 }
 
 /***** CARTAS NOTICIAS *****/
-.cards {
+.noticias .cards {
     overflow-x: hidden;
 
     @media screen and (min-width: 650px) {
@@ -409,7 +409,7 @@ header .main-btn {
     }
 }
 
-.cards-inner {
+.noticias .cards-inner {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -433,6 +433,27 @@ header .main-btn {
     }
 }
 
+.noticias-pagina .cards-inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+
+    @media screen and (min-width: 630px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem 1.1rem;
+    }
+
+    @media screen and (min-width: 834px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 6.5vw 1.1rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 6.5vw 2.5rem;
+    }
+}
+
 .card-noticia {
     display: block;
     padding: 10px 10px 0 10px;
@@ -449,6 +470,20 @@ header .main-btn {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.noticia-titulo {
+    @media screen and (min-width: 630px) {
+        font-size: 1.2rem;
+        line-height: 1.1rem;
+        margin: 1.1rem 0;
+    }
+
+    @media screen and (min-width: 1400px) {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        margin: 1.5rem 0;
+    }
 }
 
 .card-noticia-img {
