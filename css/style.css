@@ -55,12 +55,13 @@ button, .btn {
     box-sizing: border-box;
     font-family: Lekton, serif;
 
-    @media screen and (min-width: 360px) {
-        font-size: 1.4rem;
+    @media screen and (min-width: 460px) {
+        font-size: 1.3rem;
     }
 
     @media screen and (min-width: 1200px) {
-        padding: 14px 44px;
+        font-size: 1.5rem;
+        padding: 12px 42px;
     }
 }
 
@@ -439,6 +440,7 @@ header.full .main-btn {
 
 header.half {
     height: 51vh;
+    min-height: 260px;
     display: flex;
     flex-direction: column;
     justify-content: end;
