@@ -335,10 +335,19 @@ header.full {
     align-items: end;
     position: relative;
     height: 100vh;
+    min-height: 400px;
     width: 100vw;
     background-image: url("../img/headers/music-festival-1716625_1920.jpg");
     background-position: 50% 50%;
     z-index: 1;
+
+    @media screen and (min-width: 450px) {
+        min-height: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        min-height: 600px;
+    }
 }
 
 header.full .overlay {
@@ -456,8 +465,38 @@ header.half {
     }
 }
 
+header.half-bilhetes {
+    background-image: url('../img/headers/jordon-conner-tIr-PWgSYB4-unsplash.jpg');
+    background-position: 50% 61%;
+}
+
 header.half-cartaz {
     background-image: url('../img/headers/equalizer-4464339_1920.jpg');
+    background-position: 50% 61%;
+}
+
+header.half-comprar {
+    background-image: url('../img/headers/jordon-conner-tIr-PWgSYB4-unsplash.jpg');
+    background-position: 50% 61%;
+}
+
+header.half-contactos {
+    background-image: url('../img/headers/festival-3466251_1920.jpg');
+    background-position: 50% 61%;
+}
+
+header.half-noticias {
+    background-image: url('../img/headers/lightshow-2223124_1920.jpg');
+    background-position: 50% 61%;
+}
+
+header.half-noticia {
+    background-image: url('../img/headers/lightshow-2223127_1920.jpg');
+    background-position: 50% 61%;
+}
+
+header.half-festival {
+    background-image: url('../img/headers/event-4432368_1920.jpg');
     background-position: 50% 61%;
 }
 
