@@ -181,7 +181,6 @@ section h2 {
 .container {
     padding: 0 1.6rem;
 }
-
 /***** TEXTO *****/
 h2, .h2 {
     color: #FBFF12;
@@ -210,6 +209,13 @@ h3, .h3 {
     }
 }
 
+.text-decoration {
+    text-decoration:underline;
+}
+
+a {
+    text-decoration: none;
+}
 /***** NAV *****/
 nav {
     position: fixed;
@@ -678,6 +684,24 @@ header .main-btn {
     }  
 }
 
+.margin-noticias {
+    margin-bottom: 6rem;
+}
+
+.card-titulo {
+  padding: 10px;  
+}
+
+.noticia {
+    display: flex;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.card-titulo {
+    padding: 10px;
+}
+
 /***** FOOTER *****/
 footer {
     font-family: Inter, sans-serif;
@@ -767,4 +791,24 @@ footer > .container {
     @media screen and (min-width: 1400px) {
         line-height: 2em;
     }
+}
+
+/*** BREADCRUMBS ****/
+.breadcrumbs {
+    list-style: none;
+    padding: 10px 16px;
+}
+
+.breadcrumb-item {
+    display: inline;
+    font-size: 18px;
+}
+
+.breadcrumb-item a{
+    color: white;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: yellow;
 }
