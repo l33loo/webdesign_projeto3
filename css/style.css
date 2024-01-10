@@ -178,14 +178,14 @@ section, .section {
     }
 }
 
-.section-header {
-    padding: 2rem 0 0;
+.half .section-header {
+    padding: 0;
 
-    @media screen and (min-width: 650px) {
-        padding: 2rem 4vw 0;
+    @media screen and (min-width: 460px) {
+        padding: 0 11vw;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1400px) {
         padding: 0 13vw;
     }
 }
@@ -204,16 +204,19 @@ section h2 {
 h1, .h1 {
     color: #FBFF12;
     font-family: Koulen, sans-serif;
-    font-size: 4rem;
-    line-height: 6rem;
+    font-size: 2rem;
+    line-height: 3.3rem;
     margin: 0;
 
-    @media screen and (min-width: 650px) {
+    @media screen and (min-width: 460px) {
         font-size: 2.7rem;
+        line-height: 4.8rem;
+        font-weight: 400;
     }
 
     @media screen and (min-width: 1200px) {
         font-size: 4rem;
+        line-height: 6rem;
     }
 }
 
@@ -322,6 +325,10 @@ nav li a.active {
 }
 
 /***** HEADERS *****/
+header {
+    background-size: cover;
+}
+
 header.full {
     display: flex;
     align-items: end;
@@ -330,7 +337,6 @@ header.full {
     width: 100vw;
     background-image: url("../img/headers/music-festival-1716625_1920.jpg");
     background-position: 50% 50%;
-    background-size: cover;
     z-index: 1;
 }
 
@@ -421,7 +427,7 @@ header.full .main-btn {
     justify-content: center;
     padding: 2.5rem 0 0;
 
-    @media screen and (min-width: 650px) {
+    @media screen and (min-width: 460px) {
         justify-content: start;
         padding: 4rem 0 0;
     }
