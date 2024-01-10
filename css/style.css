@@ -174,7 +174,19 @@ section, .section {
     }
 
     @media screen and (min-width: 1200px) {
-        padding: 6rem 12.5vw 10rem;
+        padding: 6rem 13vw 10rem;
+    }
+}
+
+.section-header {
+    padding: 2rem 0 0;
+
+    @media screen and (min-width: 650px) {
+        padding: 2rem 4vw 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 0 13vw;
     }
 }
 
@@ -189,6 +201,22 @@ section h2 {
 }
 
 /***** TEXTO *****/
+h1, .h1 {
+    color: #FBFF12;
+    font-family: Koulen, sans-serif;
+    font-size: 4rem;
+    line-height: 6rem;
+    margin: 0;
+
+    @media screen and (min-width: 650px) {
+        font-size: 2.7rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 4rem;
+    }
+}
+
 h2, .h2 {
     color: #FBFF12;
     font-family: Koulen, sans-serif;
@@ -318,7 +346,6 @@ header.full .overlay {
 }
 
 header.full > .main {
-        /* padding: 2.5rem 0 3.5rem; */
     padding: 2rem 0 16vh;
 
     @media screen and (min-width: 650px) {
@@ -327,16 +354,14 @@ header.full > .main {
 
     @media screen and (min-width: 924px) {
         padding: 2rem 3rem 15vh 12.5vw;
-        /* padding-bottom: 13vh;
-        padding-right: 3rem; */
     }
 
     @media screen and (min-width: 1200px) {
-        padding: 6rem 12.5vw 16vh;
+        padding: 6rem 13vw 16vh;
     }
 }
 
-header .main-text {
+header.full .main-text {
     max-width: 90%;
 
     @media screen and (min-width: 1048px) {
@@ -348,7 +373,7 @@ header .main-text {
     }
 }
 
-header .main-date {
+header.full .main-date {
     color: #FBFF12;
     font-weight: bold;
     font-size: 2rem;
@@ -371,7 +396,7 @@ header .main-date {
     justify-content: end; */
 }
 
-header .main-slogan {
+header.full .main-slogan {
     color: #FBFF12;
     font-weight: bold;
     font-size: 1.7rem;
@@ -391,7 +416,7 @@ header .main-slogan {
     }
 }
 
-header .main-btn {
+header.full .main-btn {
     display: flex;
     justify-content: center;
     padding: 2.5rem 0 0;
@@ -404,6 +429,18 @@ header .main-btn {
     @media screen and (min-width: 1200px) {
         padding: 3rem 0 0;
     }
+}
+
+header.half {
+    height: 51vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+header.half-artistas {
+    background-image: url('../img/headers/equalizer-4464339_1920.jpg');
+    background-position: 50% 61%;
 }
 
 /***** CARTAS NOTICIAS *****/
