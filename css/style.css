@@ -44,7 +44,7 @@ a {
 }
 
 /***** BOTÕES *****/
-.btn {
+button, .btn {
     border-radius: 30px;
     padding: 10px 30px;
     text-decoration: none;
@@ -53,6 +53,7 @@ a {
     font-weight: bold;
     font-size: 1rem;
     box-sizing: border-box;
+    font-family: Lekton, serif;
 
     @media screen and (min-width: 360px) {
         font-size: 1.4rem;
@@ -101,7 +102,7 @@ a {
     }
 }
 
-section .btn {
+section:not(.artistas-pagina) .btn {
     margin: 4rem auto 0;
 
     @media screen and (min-width: 650px) {
@@ -157,6 +158,11 @@ section .btn {
 
 .flex-center {
     justify-content: center;
+}
+
+.margin-auto {
+    display: inline-block;
+    margin: 0 auto;
 }
 
 section, .section {
@@ -523,6 +529,17 @@ header .main-btn {
 } */
 
 /***** CARTAS ARTISTAS *****/
+.artistas-pagina .buttons-outer {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0 7rem;
+}
+
+.artistas-pagina .buttons-inner {
+    display: inline-flex;
+    gap: 1rem;
+}
+
 .artistas {
     display: flex;
     justify-content: center;
