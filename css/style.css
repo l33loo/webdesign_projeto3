@@ -46,7 +46,7 @@ a {
 /***** BOTÕES *****/
 button, .btn {
     border-radius: 30px;
-    padding: 10px 30px;
+    padding: 8px 28px;
     text-decoration: none;
     transition: all 300ms ease-in-out;
     display: inline-block;
@@ -56,11 +56,12 @@ button, .btn {
     font-family: Lekton, serif;
 
     @media screen and (min-width: 360px) {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     @media screen and (min-width: 1200px) {
-        padding: 14px 44px;
+        font-size: 1.5rem;
+        padding: 12px 42px;
     }
 }
 
@@ -178,14 +179,14 @@ section, .section {
     }
 }
 
-.section-header {
-    padding: 2rem 0 0;
+.half .section-header {
+    padding: 0;
 
-    @media screen and (min-width: 650px) {
-        padding: 2rem 4vw 0;
+    @media screen and (min-width: 460px) {
+        padding: 0 11vw;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1400px) {
         padding: 0 13vw;
     }
 }
@@ -204,16 +205,19 @@ section h2 {
 h1, .h1 {
     color: #FBFF12;
     font-family: Koulen, sans-serif;
-    font-size: 4rem;
-    line-height: 6rem;
+    font-size: 2rem;
+    line-height: 3.3rem;
+    font-weight: 400;
     margin: 0;
 
-    @media screen and (min-width: 650px) {
+    @media screen and (min-width: 460px) {
         font-size: 2.7rem;
+        line-height: 4.8rem;
     }
 
     @media screen and (min-width: 1200px) {
         font-size: 4rem;
+        line-height: 6rem;
     }
 }
 
@@ -322,6 +326,10 @@ nav li a.active {
 }
 
 /***** HEADERS *****/
+header {
+    background-size: cover;
+}
+
 header.full {
     display: flex;
     align-items: end;
@@ -330,7 +338,6 @@ header.full {
     width: 100vw;
     background-image: url("../img/headers/music-festival-1716625_1920.jpg");
     background-position: 50% 50%;
-    background-size: cover;
     z-index: 1;
 }
 
@@ -421,7 +428,7 @@ header.full .main-btn {
     justify-content: center;
     padding: 2.5rem 0 0;
 
-    @media screen and (min-width: 650px) {
+    @media screen and (min-width: 460px) {
         justify-content: start;
         padding: 4rem 0 0;
     }
@@ -432,10 +439,21 @@ header.full .main-btn {
 }
 
 header.half {
-    height: 51vh;
+    height: 48vh;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: end;
+
+    @media screen and (min-width: 460px) {
+        height: 42vh;
+        min-height: 420px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 51vh;
+        min-height: 420px;
+    }
 }
 
 header.half-cartaz {
@@ -570,16 +588,25 @@ header.half-cartaz {
     display: flex;
     justify-content: center;
     gap: 0.7rem;
-    padding: 4rem 0 7rem;
+    padding: 2.5rem 0 3rem;
 
     @media screen and (min-width: 650px) {
         gap: 1rem;
+        padding: 3rem 0;
+    }
+
+    @media screen and (min-width: 1000px) {
+        padding: 4rem 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 4rem 0 7rem;
     }
 }
 
 .cartaz-buttons .btn {
     @media screen and (max-width: 460px) {
-        padding: 8px 16px;
+        padding: 6px 14px;
     }
 }
 
