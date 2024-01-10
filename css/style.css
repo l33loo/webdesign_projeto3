@@ -51,7 +51,7 @@ button, .btn {
     transition: all 300ms ease-in-out;
     display: inline-block;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1rem;
     box-sizing: border-box;
     font-family: Lekton, serif;
 
@@ -519,7 +519,7 @@ header.half-festival {
 
 .noticias .cards-inner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2.5rem;
 
     @media screen and (min-width: 650px) {
