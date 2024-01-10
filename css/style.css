@@ -102,7 +102,7 @@ button, .btn {
     }
 }
 
-section:not(.artistas-pagina) .btn {
+section:not(.cartaz) .btn {
     margin: 4rem auto 0;
 
     @media screen and (min-width: 650px) {
@@ -438,7 +438,7 @@ header.half {
     justify-content: end;
 }
 
-header.half-artistas {
+header.half-cartaz {
     background-image: url('../img/headers/equalizer-4464339_1920.jpg');
     background-position: 50% 61%;
 }
@@ -566,15 +566,21 @@ header.half-artistas {
 } */
 
 /***** CARTAS ARTISTAS *****/
-.artistas-pagina .buttons-outer {
+.cartaz .cartaz-buttons {
     display: flex;
     justify-content: center;
+    gap: 0.7rem;
     padding: 4rem 0 7rem;
+
+    @media screen and (min-width: 650px) {
+        gap: 1rem;
+    }
 }
 
-.artistas-pagina .buttons-inner {
-    display: inline-flex;
-    gap: 1rem;
+.cartaz-buttons .btn {
+    @media screen and (max-width: 460px) {
+        padding: 8px 16px;
+    }
 }
 
 .artistas {
