@@ -1011,12 +1011,10 @@ footer > .container {
 }
 
 .email, .telefone {
-    width: 50%;
     box-sizing: border-box;
     padding: 8px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
+
 
 .metodo-compra {
     display: grid;
@@ -1032,4 +1030,39 @@ footer > .container {
     width: 1.5rem;
     height: 1.5rem;
     margin: 10px;
+}
+
+.label {
+    display: inline-block;
+}
+
+.select {
+    display: inline-block;
+
+}
+
+.subtotal-label {
+    display: flex;
+    margin: 5px;
+}
+
+.subtotal {
+margin-left: 10px;
+border-style: solid;
+padding: 5px 100px;
+border-radius: 20px;
+border-color: gray;
+}
+
+.pagamento-container {
+    border: solid;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 10px;
+    border-color: black;
+}
+
+.pagamento-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
