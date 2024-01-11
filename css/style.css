@@ -952,13 +952,36 @@ footer > .container {
 
 }
 
+.noticia .container {
+    padding: 16px;
+}
+
 .noticia-container {
-    width: 72%;
-    padding: 43px 43px 0;
+    width: 100%;
+    padding: 10px 10px 0;
+
+    @media screen and (min-width: 1000px) {
+        width: 72%;
+        padding: 43px 43px 0;
+    }
 }
 
 .noticia-text {
-    padding: 72px 96px;
+    font-size: 1.125rem;
+    padding: 30px 18px;
+
+    @media screen and (min-width: 1000px) {
+        font-size: 1.5rem;
+        padding: 72px 96px;
+    }
+}
+
+.noticia-text p {
+    margin: 28px 0;
+
+    @media screen and (min-width: 1000px) {
+        margin: 24px 0;
+    }
 }
 
 /*** Contactos ***/
