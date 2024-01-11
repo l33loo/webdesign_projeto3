@@ -584,7 +584,7 @@ header.half-festival {
     align-items: center;
 }
 
-.noticia-titulo {
+.card-noticia-titulo {
     @media screen and (min-width: 630px) {
         font-size: 1.2rem;
         line-height: 1.1rem;
@@ -911,24 +911,44 @@ footer > .container {
     }
 }
 
-/*** CARD NOTICIA ***/
+/***** PAGINA NOTICIA *****/
 .breadcrumbs {
     list-style: none;
-    padding: 10px 16px;
+    color: white;
+    padding: 0;
+    font-weight: bold;
 }
 
 .breadcrumb-item {
     display: inline;
-    font-size: 18px;
 }
 
-.breadcrumb-item a{
+.breadcrumb-item a {
     color: white;
     text-decoration: none;
 }
 
 .breadcrumb-item a:hover {
     color: yellow;
+}
+
+.noticia-titulo {
+    padding: 3rem;
+    font-family: Lekton, serif;
+    font-size: 3.4rem;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+
+}
+
+.noticia-container {
+    width: 72%;
+    padding: 2.7rem 2.7rem 0;
+}
+
+.noticia-text {
+    padding: 4.5rem 6rem;
 }
 
 /*** Contactos ***/
@@ -1001,6 +1021,7 @@ footer > .container {
     font-size: 2.5rem;
     margin: 0;
 }
+
 /*** Formulário Compra ****/
 .form {
     background-color: white;
