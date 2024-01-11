@@ -104,14 +104,14 @@ button, .btn {
 }
 
 section:not(.cartaz) .btn {
-    margin: 4rem auto 0;
+    margin: 64px auto 0;
 
     @media screen and (min-width: 650px) {
-        margin: 5rem auto 0;
+        margin: 80px auto 0;
     }
 
     @media screen and (min-width: 1200px) {
-        margin: 6rem auto 0;
+        margin: 96px auto 0;
     }
 }
 
@@ -168,14 +168,14 @@ section:not(.cartaz) .btn {
 
 section, .section {
     /* padding: 2.5rem 0 3.5rem; */
-    padding: 2rem 0 5.5rem;
+    padding: 32px 0 88px;
 
     @media screen and (min-width: 650px) {
-        padding: 2rem 4vw 6rem;
+        padding: 32px 4vw 96px;
     }
 
     @media screen and (min-width: 1200px) {
-        padding: 6rem 13vw 10rem;
+        padding: 96px 13vw 160px;
     }
 }
 
@@ -198,7 +198,7 @@ section h2 {
 }
 
 .container {
-    padding: 0 1.6rem;
+    padding: 0 26px;
 }
 
 /***** TEXTO *****/
@@ -240,11 +240,11 @@ h3, .h3 {
     font-size: 1.5rem;
     line-height: normal;
     font-weight: bold;
-    margin: 1.2rem 0;
+    margin: 19px 0;
 
     @media screen and (min-width: 600px) {
         line-height: 2.5rem;
-        margin: 1.5rem 0;
+        margin: 24px 0;
     }
 }
 
@@ -268,7 +268,7 @@ nav {
 
 nav > .nav-section {
     position: relative;
-    padding: 0.4rem 0;
+    padding: 6px 0;
 
     @media screen and (min-width: 600px) {
         padding: 0 5vw;
@@ -279,10 +279,10 @@ nav .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 16px 24px;
 
     @media screen and (min-width: 800px) {
-        padding: 1rem 1.5rem;
+        padding: 16px 24px;
     }
 }
 
@@ -366,18 +366,18 @@ header > .overlay + div {
 }
 
 header.full > .main {
-    padding: 2rem 0 16vh;
+    padding: 32px 0 16vh;
 
     @media screen and (min-width: 650px) {
-        padding: 2rem 3rem 14vh 11.5vw;
+        padding: 32px 48px 14vh 11.5vw;
     }
 
     @media screen and (min-width: 924px) {
-        padding: 2rem 3rem 15vh 12.5vw;
+        padding: 32px 48px 15vh 12.5vw;
     }
 
     @media screen and (min-width: 1200px) {
-        padding: 6rem 13vw 16vh;
+        padding: 96px 13vw 16vh;
     }
 }
 
@@ -439,15 +439,15 @@ header.full .main-slogan {
 header.full .main-btn {
     display: flex;
     justify-content: center;
-    padding: 2.5rem 0 0;
+    padding: 40px 0 0;
 
     @media screen and (min-width: 460px) {
         justify-content: start;
-        padding: 4rem 0 0;
+        padding: 64px 0 0;
     }
 
     @media screen and (min-width: 1200px) {
-        padding: 3rem 0 0;
+        padding: 48px 0 0;
     }
 }
 
@@ -509,7 +509,7 @@ header.half-festival {
     overflow-x: hidden;
 
     @media screen and (min-width: 650px) {
-        margin-left: calc(-1.6rem - 4vw);
+        margin-left: calc(-26px - 4vw);
         overflow-x: scroll;
         width: 100vw;
     }
@@ -524,18 +524,18 @@ header.half-festival {
 .noticias .cards-inner {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 40px;
 
     @media screen and (min-width: 650px) {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 1.1rem;
+        gap: 18px;
         width: 128vw;
         margin-left: -14vw;
     }
 
     @media screen and (min-width: 1200px) {
         grid-template-columns: 1fr 1fr;
-        gap: 2.5rem;
+        gap: 40px;
         width: auto;
         margin-left: 0;
     }
@@ -548,21 +548,21 @@ header.half-festival {
 .noticias-pagina .cards-inner {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 40px;
 
     @media screen and (min-width: 630px) {
         grid-template-columns: 1fr 1fr;
-        gap: 3rem 1.1rem;
+        gap: 48px 18px;
     }
 
     @media screen and (min-width: 834px) {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 6.5vw 1.1rem;
+        gap: 6.5vw 18px;
     }
 
     @media screen and (min-width: 1200px) {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 6.5vw 2.5rem;
+        gap: 6.5vw 40px;
     }
 }
 
@@ -588,13 +588,13 @@ header.half-festival {
     @media screen and (min-width: 630px) {
         font-size: 1.2rem;
         line-height: 1.1rem;
-        margin: 1.1rem 0;
+        margin: 18px 0;
     }
 
     @media screen and (min-width: 1400px) {
         font-size: 1.5rem;
         line-height: 2.5rem;
-        margin: 1.5rem 0;
+        margin: 24px 0;
     }
 }
 
@@ -630,20 +630,20 @@ header.half-festival {
 .cartaz .cartaz-buttons {
     display: flex;
     justify-content: center;
-    gap: 0.7rem;
-    padding: 2.5rem 0 3rem;
+    gap: 11px;
+    padding: 40px 0 48px;
 
     @media screen and (min-width: 650px) {
-        gap: 1rem;
-        padding: 3rem 0;
+        gap: 16px;
+        padding: 48px 0;
     }
 
     @media screen and (min-width: 1000px) {
-        padding: 4rem 0;
+        padding: 64px 0;
     }
 
     @media screen and (min-width: 1200px) {
-        padding: 4rem 0 7rem;
+        padding: 64px 0 112px;
     }
 }
 
@@ -658,12 +658,12 @@ header.half-festival {
     justify-content: center;
     flex-wrap: wrap;
     /* grid-template-columns: 1fr; */
-    gap: 2rem;
+    gap: 32px;
     /* padding-left: 15vw;
     padding-right: 15vw; */
 
     @media screen and (min-width: 650px) {
-        gap: 2rem 1rem;
+        gap: 32px 16px;
     }
 
     @media screen and (min-width: 1000px) {
@@ -671,7 +671,7 @@ header.half-festival {
     }
 
     @media screen and (min-width: 1200px) {
-        gap: 5.5rem 2rem;
+        gap: 88px 32px;
     }
 
     /* @media screen and (min-width: 970px) {
@@ -762,12 +762,12 @@ header.half-festival {
     font-weight: bold;
     font-size: 2rem;
     line-height: 1.2rem;
-    padding-top: 0.7rem;
+    padding-top: 11px;
     
     @media screen and (min-width: 600px) {
         font-size: 2.6rem;
         line-height: 1.7rem;
-        padding-top: 0.9rem;
+        padding-top: 14px;
     }
 }
 
@@ -778,13 +778,13 @@ header.half-festival {
     border-radius: 100px;
     font-family: Koulen, sans-serif;
     font-size: 1.3rem;
-    padding: 0 2rem;
+    padding: 0 32px;
     position: absolute;
     left: 0;
     bottom: 20px;
 
     @media screen and (min-width: 600px) {
-        padding: 0.15rem 2.5rem;
+        padding: 2.4px 40px;
     }
 }
 
@@ -817,14 +817,14 @@ header.half-festival {
 }
 
 .margin-noticias {
-    margin-bottom: 6rem;
+    margin-bottom: 96px;
 }
 
 /***** FOOTER *****/
 footer {
     font-family: Inter, sans-serif;
     font-size: 1rem;
-    padding: 5.5rem 0 6rem;
+    padding: 88px 0 96px;
 
     @media screen and (min-width: 500px) {
         font-size: 1.2rem;
@@ -832,7 +832,7 @@ footer {
 
     @media screen and (min-width: 650px) {
         font-size: 1.2rem;
-        padding: 4rem 4vw;
+        padding: 64px 4vw;
     }
 
     @media screen and (min-width: 834px) {
@@ -844,7 +844,7 @@ footer {
     }
 
     @media screen and (min-width: 1200px) {
-        padding: 8rem 12vw;
+        padding: 128px 12vw;
     }
 }
 
@@ -882,7 +882,7 @@ footer > .container {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 3rem;
+    padding-top: 48px;
 
     @media screen and (min-width: 834px) {
         align-items: start;
@@ -938,7 +938,7 @@ footer > .container {
 }
 
 .noticia-titulo {
-    padding: 2rem 0 2.4rem;
+    padding: 32px 0 38px;
     font-family: Lekton, serif;
     font-size: 1.5rem;
     font-weight: bold;
@@ -946,7 +946,7 @@ footer > .container {
     color: white;
 
     @media screen and (min-width: 1000px) {
-        padding: 3rem;
+        padding: 48px;
         font-size: 3.4rem;
     }
 
@@ -954,11 +954,11 @@ footer > .container {
 
 .noticia-container {
     width: 72%;
-    padding: 2.7rem 2.7rem 0;
+    padding: 43px 43px 0;
 }
 
 .noticia-text {
-    padding: 4.5rem 6rem;
+    padding: 72px 96px;
 }
 
 /*** Contactos ***/
@@ -997,7 +997,7 @@ footer > .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 32px;
 }
 
 .cards-bilhete-1 {
@@ -1036,7 +1036,7 @@ footer > .container {
 .form {
     background-color: white;
     width: 100%;
-    padding: 2rem;
+    padding: 32px;
 }
 
 .nome, .morada {
@@ -1056,7 +1056,7 @@ footer > .container {
 .metodo-compra {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
+    gap: 32px;
 }
 
 .checkbox-label {
