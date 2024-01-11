@@ -327,13 +327,13 @@ nav li a.active {
 
 /***** HEADERS *****/
 header {
+    position: relative;
     background-size: cover;
 }
 
 header.full {
     display: flex;
     align-items: end;
-    position: relative;
     height: 100vh;
     min-height: 400px;
     width: 100vw;
@@ -350,15 +350,19 @@ header.full {
     }
 }
 
-header.full .overlay {
-    height: 85vh;
+header .overlay {
+    height: 85%;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     background: linear-gradient(to top, #0C0F0A, transparent);
-    z-index: -100;
+    z-index: 2;
+}
+
+header > .overlay + div {
+    z-index: 3;
 }
 
 header.full > .main {
@@ -466,8 +470,8 @@ header.half {
 }
 
 header.half-bilhetes {
-    background-image: url('../img/headers/jordon-conner.jpg');
-    background-position: 50% 61%;
+    background-image: url('../img/headers/pablo-heimplatz.jpg');
+    background-position: 50% 95%;
 }
 
 header.half-cartaz {
@@ -477,7 +481,7 @@ header.half-cartaz {
 
 header.half-comprar {
     background-image: url('../img/headers/jordon-conner.jpg');
-    background-position: 50% 61%;
+    background-position: 50% 52%;
 }
 
 header.half-contactos {
@@ -492,7 +496,7 @@ header.half-noticias {
 
 header.half-noticia {
     background-image: url('../img/headers/lightshow2_1920.jpg');
-    background-position: 50% 61%;
+    background-position: 50% 85%;
 }
 
 header.half-festival {
