@@ -327,17 +327,17 @@ nav li a.active {
 
 /***** HEADERS *****/
 header {
+    position: relative;
     background-size: cover;
 }
 
 header.full {
     display: flex;
     align-items: end;
-    position: relative;
     height: 100vh;
     min-height: 400px;
     width: 100vw;
-    background-image: url("../img/headers/music-festival-1716625_1920.jpg");
+    background-image: url("../img/headers/music-festival_1920.jpg");
     background-position: 50% 50%;
     z-index: 1;
 
@@ -350,15 +350,19 @@ header.full {
     }
 }
 
-header.full .overlay {
-    height: 85vh;
+header .overlay {
+    height: 85%;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     background: linear-gradient(to top, #0C0F0A, transparent);
-    z-index: -100;
+    z-index: 2;
+}
+
+header > .overlay + div {
+    z-index: 3;
 }
 
 header.full > .main {
@@ -466,37 +470,37 @@ header.half {
 }
 
 header.half-bilhetes {
-    background-image: url('../img/headers/jordon-conner-tIr-PWgSYB4-unsplash.jpg');
-    background-position: 50% 61%;
+    background-image: url('../img/headers/pablo-heimplatz.jpg');
+    background-position: 50% 95%;
 }
 
 header.half-cartaz {
-    background-image: url('../img/headers/equalizer-4464339_1920.jpg');
+    background-image: url('../img/headers/equalizer_1920.jpg');
     background-position: 50% 61%;
 }
 
 header.half-comprar {
-    background-image: url('../img/headers/jordon-conner-tIr-PWgSYB4-unsplash.jpg');
-    background-position: 50% 61%;
+    background-image: url('../img/headers/jordon-conner.jpg');
+    background-position: 50% 52%;
 }
 
 header.half-contactos {
-    background-image: url('../img/headers/festival-3466251_1920.jpg');
+    background-image: url('../img/headers/festival_1920.jpg');
     background-position: 50% 61%;
 }
 
 header.half-noticias {
-    background-image: url('../img/headers/lightshow-2223124_1920.jpg');
+    background-image: url('../img/headers/lightshow1_1920.jpg');
     background-position: 50% 61%;
 }
 
 header.half-noticia {
-    background-image: url('../img/headers/lightshow-2223127_1920.jpg');
-    background-position: 50% 61%;
+    background-image: url('../img/headers/lightshow2_1920.jpg');
+    background-position: 50% 85%;
 }
 
 header.half-festival {
-    background-image: url('../img/headers/event-4432368_1920.jpg');
+    background-image: url('../img/headers/event_1920.jpg');
     background-position: 50% 61%;
 }
 
@@ -580,7 +584,7 @@ header.half-festival {
     align-items: center;
 }
 
-.noticia-titulo {
+.card-noticia-titulo {
     @media screen and (min-width: 630px) {
         font-size: 1.2rem;
         line-height: 1.1rem;
@@ -907,24 +911,44 @@ footer > .container {
     }
 }
 
-/*** CARD NOTICIA ***/
+/***** PAGINA NOTICIA *****/
 .breadcrumbs {
     list-style: none;
-    padding: 10px 16px;
+    color: white;
+    padding: 0;
+    font-weight: bold;
 }
 
 .breadcrumb-item {
     display: inline;
-    font-size: 18px;
 }
 
-.breadcrumb-item a{
+.breadcrumb-item a {
     color: white;
     text-decoration: none;
 }
 
 .breadcrumb-item a:hover {
     color: yellow;
+}
+
+.noticia-titulo {
+    padding: 3rem;
+    font-family: Lekton, serif;
+    font-size: 3.4rem;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
+
+}
+
+.noticia-container {
+    width: 72%;
+    padding: 2.7rem 2.7rem 0;
+}
+
+.noticia-text {
+    padding: 4.5rem 6rem;
 }
 
 /*** Contactos ***/
@@ -997,6 +1021,7 @@ footer > .container {
     font-size: 2.5rem;
     margin: 0;
 }
+
 /*** Formulário Compra ****/
 .form {
     background-color: white;
