@@ -994,7 +994,11 @@ footer > .container {
     /* padding: 30px 18px; */
     padding: 4vw 5vw;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 650px) {
+        font-size: 1.25rem;
+    }
+
+    @media screen and (min-width: 1400px) {
         font-size: 1.5rem;
         /* padding: 72px 96px; */
     }
