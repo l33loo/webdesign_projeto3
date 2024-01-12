@@ -1058,6 +1058,7 @@ border-color: gray;
 }
 
 .pagamento-container {
+    flex-grow: 1;
     border: solid;
     border-radius: 20px;
     padding: 20px;
@@ -1069,7 +1070,7 @@ border-color: gray;
 .pagamento-box {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    justify-content: space-between;
 }
 
 .email-div {
@@ -1078,4 +1079,10 @@ border-color: gray;
     align-items: center;
    margin: 24px 0;
     gap: 10px;
+}
+
+.tipo-bilhete-display {
+    display: flex;
+    justify-content: space-between;
+
 }
