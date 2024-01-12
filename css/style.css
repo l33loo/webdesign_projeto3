@@ -952,7 +952,7 @@ footer > .container {
 }
 
 .breadcrumb-item a:hover {
-    color: yellow;
+    color: #FBFF12;
 }
 
 .noticia-titulo {
@@ -1013,9 +1013,9 @@ footer > .container {
 }
 
 /***** FESTIVAL *****/
-section.festival {
+section.festival-pagina {
     color: #FFFFFF;
-    padding: 32px 0 88px;
+    padding: 8px 0 35px;
 
     @media screen and (min-width: 650px) {
         padding: 32px 4vw 96px;
@@ -1026,14 +1026,100 @@ section.festival {
     }
 }
 
-.festival article {
+section.festival-pagina h2 {
+    font-family: Lekton, sans-serif;
+    font-size: 1.625rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1.75rem 0;
+
+    @media screen and (min-width: 650px) {
+        font-size: 2rem;
+    }
+
+    @media screen and (min-width: 1000px) {
+        font-size: 2.25rem;
+    }
+}
+
+.festival-pagina .container-festival {
+    padding: 0 15px;
+
+    @media screen and (min-width: 650px) {
+        padding: 0 26px;
+    }
+}
+
+.festival-card {
+    display: flex;
+    flex-direction: column;
     border: 10px #FBFF12 solid;
     background-color: #0C0F0A;
-    margin: 92px 0;
+    margin: 45px 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+
+    @media screen and (min-width: 1000px) {
+        margin: 92px 0;
+    }
+}
+
+.festival-card:not(.img-right) {
+    @media screen and (min-width: 1600px) {
+        flex-direction: row;
+    }
+}
+
+.festival-card.img-right {
+    @media screen and (min-width: 1600px) {
+        flex-direction: row-reverse;
+    }
+}
+
+.festival-card-title {
+    display: flex;
+    justify-content: center;
+}
+
+.festival-card.carousel-card,
+.festival-card.parceiros-card {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-card {
+    padding: 4vw 0;
+    overflow-x: scroll;
+}
+
+.carousel-control {
+    display: none;
+
+    @media screen and (min-width: 650px) {
+        display: block;
+    }
 }
 
 .festival-card-text {
-    padding: 96px 6vw 160px;
+    width: auto;
+    /* max-width: 100%; */
+    padding: 8vw;
+
+    @media screen and (min-width: 650px) {
+        padding: 8vw 12vw;
+    }
+
+    @media screen and (min-width: 1600px) {
+        max-width: 39%;
+    }
+}
+
+.festival-card-text ol {
+    margin-top: 0;
+
+    @media screen and (min-width: 1000px) {
+        margin-top: 24px;
+    }
 }
 
 .festival-card-text li {
@@ -1044,7 +1130,19 @@ section.festival {
     position: relative;
     object-fit: cover;
     overflow: hidden;
+}
+
+.festival-card-img:not(.carousel-img-inner) {
     flex-grow: 1;
+    padding-bottom: 88%;
+
+    @media screen and (min-width: 650px) {
+        padding-bottom: 63%;
+    }
+
+    @media screen and (min-width: 1600px) {
+        padding-bottom: 0;
+    }
 }
 
 .festival-card-img::after {
@@ -1053,7 +1151,7 @@ section.festival {
     /* padding-bottom: 89%; */
 }
 
-.festival-card-img > img {
+.festival-card-img > img:not(.map-marker, .zoom) {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1061,25 +1159,271 @@ section.festival {
     object-position: 50% 50%;
 }
 
-.festival-carousel-img {
-    width: 20%;
-    position: relative;
-    object-fit: cover;
-    overflow: hidden;
+.festival-card-img .map-marker-outer {
+    position: absolute;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    font-family: Inter, sans-serif;
+    font-size: 0.5rem;
+    line-height: 20px;
+
+    @media screen and (min-width: 650px) {
+        font-size: 0.75rem;
+        line-height: 22px;
+    }
+
+    @media screen and (min-width: 1000px) {
+        font-size: 1rem;
+        line-height: 31px;
+    }
 }
 
-.festival-carousel-img::after {
+.festival-card-img .zoom {
+    width: 16px;
+    position: absolute;
+    top: 3%;
+    right: 4%;
+
+    @media screen and (min-width: 650px) {
+        width: 35px;
+    }
+
+    @media screen and (min-width: 1000px) {
+        width: auto;
+    }
+}
+
+.festival-card-img .zoom img {
+    width: 16px;
+
+    @media screen and (min-width: 650px) {
+        width: 35px;
+    }
+
+    @media screen and (min-width: 1000px) {
+        width: auto;
+    }
+}
+
+.festival-card-img .zoom-white:not(:hover) {
+    filter: invert(96%) sepia(93%) saturate(1%) hue-rotate(108deg) brightness(106%) contrast(101%);
+}
+
+/* .festival-card-img .map-marker:after {
+    padding-top: 6px;
+} */
+
+.festival-card-img .map-marker-outer::after {
+    position: absolute;
+}
+
+.festival-card-img .map-marker-outer:nth-child(3) {
+    top: 21%;
+    left: 9%;
+
+    &:after {
+        content: "1";
+    }
+}
+
+.festival-card-img .map-marker-outer:nth-child(4) {
+    bottom: 6%;
+    left: 15%;
+
+    &:after {
+        content: "2";
+    }
+}
+
+.festival-card-img .map-marker-outer:nth-child(5) {
+    top: 19%;
+    right: 21%;
+
+    &:after {
+        content: "3";
+    }
+}
+
+.festival-card-img .map-marker-outer:nth-child(6) {
+    bottom: 16%;
+    right: 5%;
+
+    &:after {
+        content: "4";
+    }
+}
+
+.festival-card-img .map-marker-outer:nth-child(7) {
+    bottom: 23%;
+    left: 40%;
+
+    &:after {
+        content: "5";
+    }
+}
+
+.festival-card-img .map-marker-outer:nth-child(8) {
+    bottom: 34%;
+    left: 19%;
+
+    &:after {
+        content: "6";
+    }
+}
+
+.festival-card-img .map-marker-outer:nth-child(9) {
+    top: 36%;
+    left: 34%;
+
+    &:after {
+        content: "7";
+    }
+}
+
+.festival-card.carousel-card {
+    padding: 8vw 0;
+
+    @media screen and (min-width: 1000px) {
+        padding: 2vw 0 0;
+    }
+}
+
+.festival-card-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw 0 0;
+    width: 220%;
+    margin-left: -75%;
+
+    @media screen and (min-width: 650px) {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.festival-pagina button {
+    background-color: transparent;
+    padding: 0 1%;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    transform: filter 300ms ease-in-out;
+
+    &:hover {
+        img {
+            filter: invert(28%) sepia(52%) saturate(6301%) hue-rotate(325deg) brightness(100%) contrast(101%);
+        }
+    }
+}
+
+.festival-card-carousel button img {
+    filter: invert(96%) sepia(93%) saturate(5563%) hue-rotate(340deg) brightness(111%) contrast(105%);
+    transform: filter 300ms ease-in-out;
+}
+
+.carousel-imgs {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 15px;
+
+    @media screen and (min-width: 1000px) {
+        gap: 3%;
+    }
+}
+
+img.map-marker {
+    transition: all 300ms ease-in-out;
+    width: 24px;
+    height: 24px;
+
+    @media screen and (min-width: 650px) {
+        width: 30px;
+        height: 30px;
+    }
+
+    @media screen and (min-width: 1000px) {
+        width: auto;
+        height: auto;
+    }
+}
+
+.carousel-img-outer {
+    &:hover {
+        img {
+            transform: scale(1.3);
+        }
+
+        .carousel-img-title {
+            color: #FBFF12;
+        }
+    }
+}
+
+.carousel-img-inner::after {
     content: "";
     display: block;
-    /* padding-bottom: 89%; */
+    padding-bottom: 120%;
 }
 
-.festival-carousel-img > img {
-    position: absolute;
+@media screen and (min-width: 650px) {
+    .carousel-img-inner::after {
+        padding-bottom: 100%;
+    }
+}
+
+.carousel-img-outer:nth-child(1),
+.carousel-img-outer:nth-child(3) {
+    flex-grow: 1;
+}
+
+.carousel-img-outer:nth-child(2) {
+    flex-grow: 1;
+
+    @media screen and (min-width: 650px) {
+        flex-grow: 1.5;
+    }
+}
+
+.carousel-img-title {
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-variant: small-caps;
+    transition: color 300ms ease-in-out;
+
+    @media screen and (min-width: 1400px) {
+        font-size: 1.5rem;
+    }
+}
+
+.parceiros-card {
+    padding: 6vw 7vw 14vw;
+    flex-grow: 1;
+
+    @media screen and (min-width: 650px) {
+        padding: 5vw 7vw 10vw;
+    }
+
+    @media screen and (min-width: 1000px) {
+        padding: 6vw 7vw;
+    }
+}
+
+.festival-parceiros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 3vw 0;
+    padding-top: 2vw;
+}
+
+.festival-parceiros img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
 }
 
 /*** Contactos ***/
