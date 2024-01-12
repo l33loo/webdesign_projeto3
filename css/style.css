@@ -1589,25 +1589,30 @@ section.contactos img.icon {
 } */
 
 /**** Bilhetes ***/
-.bilhetes .container {
+section.bilhetes .container {
     display: grid;
     grid-template-columns: 1fr;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 55px;
 
     @media screen and (min-width: 800px) {
         grid-template-columns: 1fr 1fr;
+        gap: 40px;
     }
 }
 
 .card-bilhete {
     background-color: white;
     display: block;
-    padding: 3vw 0 7vw;
+    padding: 10vw 0 22vw;
     text-align: center;
     display: flex;
     justify-content: center;
+
+    @media screen and (min-width: 650px) {
+        padding: 3vw 0 7vw;
+    }
 }
 
 .card-bilhete-inner {
@@ -1617,26 +1622,47 @@ section.contactos img.icon {
 .card-bilhete-titulo {
     font-family: Lekton, sans-serif;
     font-weight: bold;
-    font-size: 3.125rem;
+    font-size: 2rem;
     color:#0C0F0A;
     text-transform: uppercase;
+
+    @media screen and (min-width: 650px) {
+        font-size: 3.125rem;
+    }
 }
 
-.card-bilhete-texto-p {
-    font-size: 2rem;
+.card-bilhete-texto {
+    font-size: 1.5rem;
     text-wrap: wrap;
+
+    @media screen and (min-width: 650px) {
+        font-size: 2rem;
+    }
 }
 
 .card-bilhete-preco {
     /* padding:0;
     margin:0; */
-    font-size: 6.25rem;
-    padding: 50px 0 30px;
+    font-size: 4rem;
+    padding: 45px 0 10px;
+
+    @media screen and (min-width: 650px) {
+        font-size: 6.25rem;
+        padding: 50px 0 30px;
+    }
 }
 
 .card-bilhete hr{
     margin: 0;
     
+}
+
+.card-bilhete .btn {
+    margin: 32px auto 0 !important;
+
+    @media screen and (min-width: 650px) {
+        margin: 64px auto 0;
+    }
 }
 
 
