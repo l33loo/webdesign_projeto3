@@ -952,7 +952,7 @@ footer > .container {
 }
 
 .breadcrumb-item a:hover {
-    color: yellow;
+    color: #FBFF12;
 }
 
 .noticia-titulo {
@@ -1054,6 +1054,10 @@ section.festival-pagina h2 {
     justify-content: center;
 }
 
+.carousel-card {
+    padding: 4vw 0;
+}
+
 .festival-card-text {
     width: auto;
     max-width: 39%;
@@ -1090,7 +1094,22 @@ section.festival-pagina h2 {
 
 .festival-card-carousel {
     display: flex;
+    justify-content: center;
+    padding: 2vw 0;
+}
+
+.festival-card-carousel button {
+    background-color: transparent;
+    padding: 0 1%;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-imgs {
+    display: flex;
     align-items: center;
+    flex-grow: 1;
     gap: 40px;
 }
 
@@ -1107,6 +1126,10 @@ section.festival-pagina h2 {
 
 .carousel-img:nth-child(2) {
     flex-grow: 1.5;
+}
+
+.carousel-img-title {
+    color: #FFFFFF;
 }
 
 .parceiros-card {
