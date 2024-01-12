@@ -1164,12 +1164,15 @@ section.festival {
     width: 100%;
     box-sizing: border-box;
     padding: 8px;
+    border-radius: 10px;
 }
 
 .email, .telefone {
     box-sizing: border-box;
     padding: 8px;
     width: 50%;
+    border-radius: 10px;
+    border-color: grey;
 }
 
 
@@ -1189,6 +1192,16 @@ section.festival {
     margin: 10px;
 }
 
+.container-diario {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: lightgrey;
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    margin: 0 15px;
+}
+
 .label {
     display: inline-block;
 }
@@ -1198,6 +1211,7 @@ section.festival {
     width: 305px;
     height: 50px;
     border-radius: 10px;
+    margin: 0px 15px;
 }
 
 .subtotal-label {
@@ -1240,5 +1254,4 @@ border-color: gray;
 .tipo-bilhete-display {
     display: flex;
     justify-content: space-between;
-
 }
