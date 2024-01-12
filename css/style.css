@@ -1099,6 +1099,7 @@ footer > .container {
 .email, .telefone {
     box-sizing: border-box;
     padding: 8px;
+    width: 50%;
 }
 
 
@@ -1124,7 +1125,9 @@ footer > .container {
 
 .select {
     display: inline-block;
-
+    width: 305px;
+    height: 50px;
+    border-radius: 10px;
 }
 
 .subtotal-label {
@@ -1151,4 +1154,12 @@ border-color: gray;
 .pagamento-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.email-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin: 24px 0;
+    gap: 10px;
 }
