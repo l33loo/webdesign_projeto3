@@ -915,12 +915,30 @@ footer > .container {
 .breadcrumbs {
     list-style: none;
     color: white;
-    padding: 0;
+    padding: 0 10px;
+    margin: 0 0 14px;
     font-weight: bold;
     font-size: 0.9rem;
 
+    @media screen and (min-width: 460px) {
+        padding: 0 12vw;
+        font-size: 1.1rem;
+    }
+
+    @media screen and (min-width: 650px) {
+        padding: 0 8vw;
+    }
+
     @media screen and (min-width: 1000px) {
         font-size: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 0;
+    }
+
+    @media screen and (min-width: 1400px) {
+        padding: 0 16px;
     }
 }
 
@@ -945,6 +963,11 @@ footer > .container {
     text-decoration: underline;
     color: white;
 
+    @media screen and (min-width: 650px) {
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+
     @media screen and (min-width: 1000px) {
         padding: 48px;
         font-size: 3.4rem;
@@ -958,21 +981,26 @@ footer > .container {
 
 .noticia-container {
     width: 100%;
-    padding: 10px 10px 0;
+    padding: 2vw 2vw 0;
 
     @media screen and (min-width: 1000px) {
         width: 72%;
-        padding: 43px 43px 0;
+        /* padding: 43px 43px 0; */
     }
 }
 
 .noticia-text {
     font-size: 1.125rem;
-    padding: 30px 18px;
+    /* padding: 30px 18px; */
+    padding: 4vw 5vw;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 650px) {
+        font-size: 1.25rem;
+    }
+
+    @media screen and (min-width: 1400px) {
         font-size: 1.5rem;
-        padding: 72px 96px;
+        /* padding: 72px 96px; */
     }
 }
 
