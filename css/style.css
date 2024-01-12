@@ -292,10 +292,15 @@ nav .nav-container {
 
 nav .logo {
     width: 7.1rem;
-    color: #FF206E;
+    filter: invert(41%) sepia(89%) saturate(5996%) hue-rotate(324deg) brightness(99%) contrast(105%);
+    transition: all 300ms ease-in-out;
 
     @media screen and (min-width: 600px) {
         width: 16rem;
+    }
+
+    &:hover {
+        filter: invert(100%) sepia(38%) saturate(4371%) hue-rotate(348deg) brightness(107%) contrast(101%);
     }
 }
 
@@ -1589,6 +1594,18 @@ section.contactos img.icon {
 } */
 
 /**** Bilhetes ***/
+section.bilhetes {  
+    padding: 55px 0 88px;
+
+    @media screen and (min-width: 650px) {
+        padding: 12vw 4vw 15vw;
+    }
+
+    @media screen and (min-width: 1000px) {
+        padding: 8vw 13vw 10vw;
+    }
+}
+
 section.bilhetes .container {
     display: grid;
     grid-template-columns: 1fr;
