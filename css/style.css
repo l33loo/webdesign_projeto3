@@ -43,6 +43,10 @@ a {
     cursor: pointer;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /***** BOTÕES *****/
 button, .btn {
     border-radius: 30px;
@@ -1427,35 +1431,102 @@ img.map-marker {
 }
 
 /*** Contactos ***/
+section.contactos {
+    padding: 55px 0;
+
+    @media screen and (min-width: 650px) {
+        padding: 8vw 0 10vw;
+    }
+}
+
 .container-contactos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: white;
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row-reverse;
+    }
 }
 
 .texto-contactos, .imagem-contactos {
-    flex: 1;
     box-sizing: border-box;
     overflow: hidden;
 }
 
 .imagem-contactos {
+    position: relative;
+    flex-grow: 1;
+    padding-bottom: 88%;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 63%;
+    }
+
+    @media screen and (min-width: 1600px) {
+        padding-bottom: 0;
+    }
+}
+
+.imagem-contactos::after {
+    content: "";
+    display: block;
+    /* padding-bottom: 89%; */
+}
+
+.imagem-contactos > img {
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: 50% 50%;
+}
+
+section.contactos img.icon {
+    width: 38px;
+    transition: all 300ms ease-in-out;
+
+    @media screen and (min-width: 834px) {
+        width: 33px;
+    }
+
+    @media screen and (min-width: 1400px) {
+        width: auto;
+    }
+
+    &:hover {
+        filter: invert(28%) sepia(52%) saturate(6301%) hue-rotate(325deg) brightness(100%) contrast(101%);
+    }
 }
 
 .texto-contactos {
-    margin: auto;
-    padding: 50px;
-    font-size: 15px;
+    padding: 9vw 7vw;
+    
+    @media screen and (min-width: 1200px) {
+        max-width: 50%;
+    }
 }
 
-.icon { 
+.texto-contactos .contactos-social, .contactos-social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.texto-contactos .contactos-social {
+    padding-top: 3vw;
+    flex-wrap: wrap;
+}
+
+.texto-contactos .contactos-social-icons {
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* .icon { 
     margin: 10px;
     padding-top:5px;
-}
+} */
 
 /**** Bilhetes ***/
 .container-bilhetes {
