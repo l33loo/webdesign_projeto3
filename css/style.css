@@ -1084,12 +1084,89 @@ section.festival-pagina h2 {
     /* padding-bottom: 89%; */
 }
 
-.festival-card-img > img {
+.festival-card-img > img:not(.map-marker) {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 50% 50%;
+}
+
+.festival-card-img .map-marker {
+    position: absolute;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    line-height: 31px;
+}
+
+/* .festival-card-img .map-marker:after {
+    padding-top: 6px;
+} */
+
+.festival-card-img .map-marker:nth-child(2) {
+    top: 21%;
+    left: 9%;
+
+    &:after {
+        content: "1";
+    }
+}
+
+.festival-card-img .map-marker:nth-child(3) {
+    bottom: 6%;
+    left: 15%;
+
+    &:after {
+        content: "2";
+    }
+}
+
+.festival-card-img .map-marker:nth-child(4) {
+    top: 19%;
+    right: 21%;
+
+    &:after {
+        content: "3";
+    }
+}
+
+.festival-card-img .map-marker:nth-child(5) {
+    bottom: 16%;
+    right: 5%;
+
+    &:after {
+        content: "4";
+    }
+}
+
+.festival-card-img .map-marker:nth-child(6) {
+    bottom: 23%;
+    left: 40%;
+
+    &:after {
+        content: "5";
+    }
+}
+
+.festival-card-img .map-marker:nth-child(7) {
+    bottom: 34%;
+    left: 19%;
+
+    &:after {
+        content: "6";
+    }
+}
+
+.festival-card-img .map-marker:nth-child(8) {
+    top: 36%;
+    left: 34%;
+
+    &:after {
+        content: "7";
+    }
 }
 
 .festival-card-carousel {
