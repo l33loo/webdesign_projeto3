@@ -1032,6 +1032,7 @@ section.festival {
     background-color: #0C0F0A;
     margin: 92px 0;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
 }
 
 .festival-card-title {
@@ -1045,7 +1046,9 @@ section.festival {
 }
 
 .festival-card-text {
-    padding: 96px 6vw 160px;
+    padding: 96px 8vw 160px;
+    width: auto;
+    max-width: 39%;
 }
 
 .festival-card-text li {
