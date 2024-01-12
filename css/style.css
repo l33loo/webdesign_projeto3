@@ -1144,16 +1144,19 @@ border-color: gray;
 }
 
 .pagamento-container {
+    flex-grow: 1;
     border: solid;
     border-radius: 20px;
     padding: 20px;
     margin-left: 10px;
     border-color: black;
+    margin-top: 25px;
 }
 
 .pagamento-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
 }
 
 .email-div {
@@ -1162,4 +1165,10 @@ border-color: gray;
     align-items: center;
    margin: 24px 0;
     gap: 10px;
+}
+
+.tipo-bilhete-display {
+    display: flex;
+    justify-content: space-between;
+
 }
