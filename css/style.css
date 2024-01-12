@@ -1063,11 +1063,13 @@ border-color: gray;
     padding: 20px;
     margin-left: 10px;
     border-color: black;
+    margin-top: 25px;
 }
 
 .pagamento-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
 }
 
 .email-div {

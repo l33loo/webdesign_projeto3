@@ -15,7 +15,7 @@
         </div>
     </header>
     <section>
-        <div class="form">
+<div class="form">
             <p><b>Nome:</b></p>
                 <input class="nome" type="text">
                 <div class="email-div">
@@ -27,7 +27,7 @@
             <p><b>Morada:</b></p>
                 <input class="morada" type="text">
             <p><b>Tipo de Bilhete:</b></p>
-        <div class="checkbox-label">
+        <div class="checkbox-label tipo-bilhete-display">
         
             <input class="checkbox" type="checkbox" name="Diário" id=""><b>Diário</b>
         
@@ -41,24 +41,25 @@
             <option value="">21</option>
            </select>
         </div>
-    <div>
-            <p><b>Quantidade:</b></p>
-        <label class="label" for="label"><b>Proteção de <br> reembolso:</b></label>
-        <select class="select" id="select">
-            <option value="Sem">Sem</option>
-            <option value="Com">Com</option>
-        </select>
-        <div class="subtotal-label">
+    <div class="flex">
+        <div>
+                <p><b>Quantidade:</b></p>
+            <label class="label" for="label"><b>Proteção    de <br> reembolso:</b></label>
+                <select class="select" id="select">
+                <option value="Sem">Sem</option>
+                <option value="Com">Com</option>
+                </select>
+            <div class="subtotal-label">
             <p style="padding-top: 8px;"><b>Subtotal:</b></p>
                 <div class="container">
              <p class="subtotal"><b>360.00 &euro;</b></p>
                  </div>
-        </div>
-        <div class="subtotal-label">
-            <p style="padding-top:8px;"><b>Total:</b></p>
-            <div class="container">
-                <p class="subtotal" style="margin-left: 3rem; background-color: lightgrey;"><b>360.00 &euro;</b></p>
             </div>
+            <div class="subtotal-label">
+            <p style="padding-top:8px;"><b>Total:</b></p>
+                <p class="subtotal" style="margin-left: 73px; background-color: lightgrey;"><b>360.00 &euro;</b></p>
+                </div>
+        </div>
         </div>
         <div class="pagamento-container">
             <p style="text-align: center;"><b><u>Método de pagamento:</u></b></p>
@@ -73,15 +74,14 @@
             <input class="checkbox" type="checkbox" name="" id=""> <b>Multibanco</b>
         </div>
         </div>
-            <p><b>Nome:</b> ___________________________________________________________________</p>
-            <p><b>Morada:</b> _________________________________________________________________</p>
-            <p><b>Código Postal:</b> __________________________________________________________</p>
-        </div>
-</div>
+            <p><b>Nome:</b></p>
+            <p><b>Morada:</b></p>
+            <p><b>Código Postal:</b></p>
+    </div>        
         <div style="display: flex; ">
             <a href="" class="btn btn-pink">Comprar</a>
         </div>
-    </div>
+</div>
     </section>
 </body>
 </html>
