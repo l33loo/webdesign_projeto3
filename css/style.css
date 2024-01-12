@@ -1033,6 +1033,10 @@ section.festival-pagina h2 {
     text-transform: uppercase;
     margin: 1.75rem 0;
 
+    @media screen and (min-width: 650px) {
+        font-size: 2rem;
+    }
+
     @media screen and (min-width: 1000px) {
         font-size: 2.25rem;
     }
@@ -1041,7 +1045,7 @@ section.festival-pagina h2 {
 .festival-pagina .container-festival {
     padding: 0 15px;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 650px) {
         padding: 0 26px;
     }
 }
@@ -1085,12 +1089,13 @@ section.festival-pagina h2 {
 
 .carousel-card {
     padding: 4vw 0;
+    overflow-x: scroll;
 }
 
 .carousel-control {
     display: none;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 650px) {
         display: block;
     }
 }
@@ -1099,6 +1104,10 @@ section.festival-pagina h2 {
     width: auto;
     /* max-width: 100%; */
     padding: 8vw;
+
+    @media screen and (min-width: 650px) {
+        padding: 8vw 12vw;
+    }
 
     @media screen and (min-width: 1600px) {
         max-width: 39%;
@@ -1128,7 +1137,7 @@ section.festival-pagina h2 {
     padding-bottom: 88%;
 
     @media screen and (min-width: 650px) {
-        padding-bottom: 70%;
+        padding-bottom: 63%;
     }
 
     @media screen and (min-width: 1600px) {
@@ -1159,6 +1168,11 @@ section.festival-pagina h2 {
     font-size: 0.5rem;
     line-height: 20px;
 
+    @media screen and (min-width: 650px) {
+        font-size: 0.75rem;
+        line-height: 22px;
+    }
+
     @media screen and (min-width: 1000px) {
         font-size: 1rem;
         line-height: 31px;
@@ -1171,6 +1185,10 @@ section.festival-pagina h2 {
     top: 3%;
     right: 4%;
 
+    @media screen and (min-width: 650px) {
+        width: 35px;
+    }
+
     @media screen and (min-width: 1000px) {
         width: auto;
     }
@@ -1178,6 +1196,10 @@ section.festival-pagina h2 {
 
 .festival-card-img .zoom img {
     width: 16px;
+
+    @media screen and (min-width: 650px) {
+        width: 35px;
+    }
 
     @media screen and (min-width: 1000px) {
         width: auto;
@@ -1260,7 +1282,7 @@ section.festival-pagina h2 {
 }
 
 .festival-card.carousel-card {
-    padding: 8vw;
+    padding: 8vw 0;
 
     @media screen and (min-width: 1000px) {
         padding: 2vw 0 0;
@@ -1272,6 +1294,13 @@ section.festival-pagina h2 {
     justify-content: center;
     align-items: center;
     padding: 2vw 0 0;
+    width: 220%;
+    margin-left: -75%;
+
+    @media screen and (min-width: 650px) {
+        width: 100%;
+        margin-left: 0;
+    }
 }
 
 .festival-pagina button {
@@ -1298,7 +1327,11 @@ section.festival-pagina h2 {
     display: flex;
     align-items: center;
     flex-grow: 1;
-    gap: 40px;
+    gap: 15px;
+
+    @media screen and (min-width: 1000px) {
+        gap: 3%;
+    }
 }
 
 img.map-marker {
@@ -1306,9 +1339,14 @@ img.map-marker {
     width: 24px;
     height: 24px;
 
+    @media screen and (min-width: 650px) {
+        width: 30px;
+        height: 30px;
+    }
+
     @media screen and (min-width: 1000px) {
-        width: 100%;
-        height: 100%;
+        width: auto;
+        height: auto;
     }
 }
 
@@ -1327,7 +1365,13 @@ img.map-marker {
 .carousel-img-inner::after {
     content: "";
     display: block;
-    padding-bottom: 100%;
+    padding-bottom: 120%;
+}
+
+@media screen and (min-width: 650px) {
+    .carousel-img-inner::after {
+        padding-bottom: 100%;
+    }
 }
 
 .carousel-img-outer:nth-child(1),
@@ -1336,21 +1380,34 @@ img.map-marker {
 }
 
 .carousel-img-outer:nth-child(2) {
-    flex-grow: 1.5;
+    flex-grow: 1;
+
+    @media screen and (min-width: 650px) {
+        flex-grow: 1.5;
+    }
 }
 
 .carousel-img-title {
+    font-size: 1.25rem;
     color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
     font-variant: small-caps;
     transition: color 300ms ease-in-out;
+
+    @media screen and (min-width: 1400px) {
+        font-size: 1.5rem;
+    }
 }
 
 .parceiros-card {
     padding: 6vw 7vw 14vw;
     flex-grow: 1;
+
+    @media screen and (min-width: 650px) {
+        padding: 5vw 7vw 10vw;
+    }
 
     @media screen and (min-width: 1000px) {
         padding: 6vw 7vw;
