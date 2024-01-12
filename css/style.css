@@ -915,12 +915,30 @@ footer > .container {
 .breadcrumbs {
     list-style: none;
     color: white;
-    padding: 0;
+    padding: 0 10px;
+    margin: 0 0 14px;
     font-weight: bold;
     font-size: 0.9rem;
 
+    @media screen and (min-width: 460px) {
+        padding: 0 12vw;
+        font-size: 1.1rem;
+    }
+
+    @media screen and (min-width: 650px) {
+        padding: 0 8vw;
+    }
+
     @media screen and (min-width: 1000px) {
         font-size: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 0;
+    }
+
+    @media screen and (min-width: 1400px) {
+        padding: 0 16px;
     }
 }
 
@@ -944,6 +962,10 @@ footer > .container {
     font-weight: bold;
     text-decoration: underline;
     color: white;
+
+    @media screen and (min-width: 650px) {
+        font-size: 2rem;
+    }
 
     @media screen and (min-width: 1000px) {
         padding: 48px;
