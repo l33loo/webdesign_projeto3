@@ -1013,7 +1013,7 @@ footer > .container {
 }
 
 /***** FESTIVAL *****/
-section.festival {
+section.festival-pagina {
     color: #FFFFFF;
     padding: 32px 0 88px;
 
@@ -1024,6 +1024,14 @@ section.festival {
     @media screen and (min-width: 1200px) {
         padding: 96px 6vw 160px;
     }
+}
+
+section.festival-pagina h2 {
+    font-family: Lekton, sans-serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 1.75rem 0;
 }
 
 .festival-card {
@@ -1040,15 +1048,16 @@ section.festival {
     justify-content: center;
 }
 
-.festival-card.carousel-card {
+.festival-card.carousel-card,
+.festival-card.parceiros-card {
     flex-direction: column;
     justify-content: center;
 }
 
 .festival-card-text {
-    padding: 96px 8vw 160px;
     width: auto;
     max-width: 39%;
+    padding: 8vw;
 }
 
 .festival-card-text li {
@@ -1098,6 +1107,18 @@ section.festival {
 
 .carousel-img:nth-child(2) {
     flex-grow: 1.5;
+}
+
+.parceiros-card {
+    padding: 6vw 7vw;
+}
+
+.festival-parceiros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3vw 0;
+    padding-top: 2vw;
 }
 
 /*** Contactos ***/
