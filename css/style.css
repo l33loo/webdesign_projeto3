@@ -1467,7 +1467,7 @@ section.contactos {
 .imagem-contactos {
     position: relative;
     flex-grow: 1;
-    padding-bottom: 88%;
+    padding-bottom: 100%;
 
     @media screen and (min-width: 800px) {
         padding-bottom: 69%;
@@ -1519,8 +1519,17 @@ section.contactos {
     }
 }
 
-.imagem-contactos button img {
+.imagem-contactos .zoom img {
     transform: filter 300ms ease-in-out;
+    width: 28px;
+
+    @media screen and (min-width: 650px) {
+        width: 35px;
+    }
+
+    @media screen and (min-width: 1000px) {
+        width: auto;
+    }
 }
 
 section.contactos img.icon {
@@ -1542,6 +1551,7 @@ section.contactos img.icon {
 
 .texto-contactos {
     padding: 9vw 7vw;
+    font-size: 1.25rem;
 
     @media screen and (min-width: 600px) {
         padding: 12vw 14vw;
@@ -1566,7 +1576,11 @@ section.contactos img.icon {
     flex-grow: 1;
     align-items: center;
     justify-content: center;
-    gap: 28px;
+    gap: 24px;
+
+    @media screen and (min-width: 600px) {
+        gap: 28px;
+    }
 }
 
 /* .icon { 
