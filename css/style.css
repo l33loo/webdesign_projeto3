@@ -1012,6 +1012,76 @@ footer > .container {
     }
 }
 
+/***** FESTIVAL *****/
+section.festival {
+    color: #FFFFFF;
+    padding: 32px 0 88px;
+
+    @media screen and (min-width: 650px) {
+        padding: 32px 4vw 96px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 96px 6vw 160px;
+    }
+}
+
+.festival article {
+    border: 10px #FBFF12 solid;
+    background-color: #0C0F0A;
+    margin: 92px 0;
+}
+
+.festival-card-text {
+    padding: 96px 6vw 160px;
+}
+
+.festival-card-text li {
+    padding: 0.5rem 0;
+}
+
+.festival-card-img {
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.festival-card-img::after {
+    content: "";
+    display: block;
+    /* padding-bottom: 89%; */
+}
+
+.festival-card-img > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.festival-carousel-img {
+    width: 20%;
+    position: relative;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.festival-carousel-img::after {
+    content: "";
+    display: block;
+    /* padding-bottom: 89%; */
+}
+
+.festival-carousel-img > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
 /*** Contactos ***/
 .container-contactos {
     display: grid;
