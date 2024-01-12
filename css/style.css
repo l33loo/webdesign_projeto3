@@ -1,10 +1,7 @@
 /***** BREAKPOINTS *****/
-/* 480px, 768px, 1024px, and 1280px */
-/* index.php: tablet-834px*1194 => 810px; 1400px (nav); 1800 (artistas); 600px; 1200px
-
-Mobile: 360px x 640 px
-
-/* 280, 40, 100 */
+/* Mobile: 360px * 640px */
+/* Tablet: 834px * 1194px */
+/* Desktop:: 1920px * 1080px */
 
 /***** FONTES *****/
 @font-face {
@@ -171,7 +168,6 @@ section:not(.cartaz) .btn {
 }
 
 section, .section {
-    /* padding: 2.5rem 0 3.5rem; */
     padding: 32px 0 88px;
 
     @media screen and (min-width: 650px) {
@@ -419,10 +415,6 @@ header.full .main-date {
         font-size: 4.5rem;
         line-height: 7rem;
     }
-    
-    /* display: flex;
-    flex-direction: column;
-    justify-content: end; */
 }
 
 header.full .main-slogan {
@@ -628,13 +620,6 @@ header.half-festival {
     transition: all 300ms ease-in-out;
 }
 
-/* .card-noticia img {
-    height: 20vw;
-    width: 100%;
-    object-fit: cover;
-    vertical-align: bottom;
-} */
-
 /***** CARTAS ARTISTAS *****/
 .cartaz .cartaz-buttons {
     display: flex;
@@ -666,10 +651,7 @@ header.half-festival {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* grid-template-columns: 1fr; */
     gap: 32px;
-    /* padding-left: 15vw;
-    padding-right: 15vw; */
 
     @media screen and (min-width: 650px) {
         gap: 32px 16px;
@@ -682,30 +664,6 @@ header.half-festival {
     @media screen and (min-width: 1200px) {
         gap: 88px 32px;
     }
-
-    /* @media screen and (min-width: 970px) {
-        grid-template-columns: 1fr 1fr;
-        
-    }
-
-    @media screen and (min-width: 1200px) {
-        grid-template-columns: 1fr 1fr;
-        
-    }
-
-    @media screen and (min-width: 1220px) {
-        padding-left: 10rem;
-        padding-right: 0;
-    }
-
-    @media screen and (min-width: 1400px) {
-        grid-template-columns: 1fr 1fr 1fr;
-        padding-left: 0;
-    }
-
-    @media screen and (min-width: 1800px) {
-        padding-left: 10rem;
-    } */
 }
 
 .artista {
@@ -858,7 +816,6 @@ footer {
 }
 
 footer > .container {
-    /* width: 100%; */
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
@@ -1000,13 +957,11 @@ footer > .container {
 
     @media screen and (min-width: 1000px) {
         width: 72%;
-        /* padding: 43px 43px 0; */
     }
 }
 
 .noticia-text {
     font-size: 1.125rem;
-    /* padding: 30px 18px; */
     padding: 4vw 5vw;
 
     @media screen and (min-width: 650px) {
@@ -1015,7 +970,6 @@ footer > .container {
 
     @media screen and (min-width: 1400px) {
         font-size: 1.5rem;
-        /* padding: 72px 96px; */
     }
 }
 
@@ -1117,7 +1071,6 @@ section.festival-pagina h2 {
 
 .festival-card-text {
     width: auto;
-    /* max-width: 100%; */
     padding: 8vw;
 
     @media screen and (min-width: 650px) {
@@ -1163,7 +1116,6 @@ section.festival-pagina h2 {
 .festival-card-img::after {
     content: "";
     display: block;
-    /* padding-bottom: 89%; */
 }
 
 .festival-card-img > img:not(.map-marker, .zoom) {
@@ -1224,10 +1176,6 @@ section.festival-pagina h2 {
 .festival-card-img .zoom-white:not(:hover) {
     filter: invert(96%) sepia(93%) saturate(1%) hue-rotate(108deg) brightness(106%) contrast(101%);
 }
-
-/* .festival-card-img .map-marker:after {
-    padding-top: 6px;
-} */
 
 .festival-card-img .map-marker-outer::after {
     position: absolute;
@@ -1486,7 +1434,6 @@ section.contactos {
 .imagem-contactos::after {
     content: "";
     display: block;
-    /* padding-bottom: 89%; */
 }
 
 .imagem-contactos > img {
@@ -1588,11 +1535,6 @@ section.contactos img.icon {
     }
 }
 
-/* .icon { 
-    margin: 10px;
-    padding-top:5px;
-} */
-
 /**** Bilhetes ***/
 section.bilhetes {  
     padding: 55px 0 88px;
@@ -1679,8 +1621,6 @@ section.bilhetes .container {
 }
 
 .card-bilhete-preco {
-    /* padding:0;
-    margin:0; */
     font-size: 4rem;
     padding: 45px 0 10px;
 
@@ -1702,14 +1642,6 @@ section.bilhetes .container {
         margin: 64px auto 0;
     }
 }
-
-
-/* .card-bilhete-titulo {
-    text-align: center;
-    padding-top: 50px;
-    font-size: 2.5rem;
-    margin: 0;
-} */
 
 /*** Formulário Compra ****/
 .form {
