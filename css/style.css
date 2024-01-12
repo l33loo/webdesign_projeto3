@@ -1594,7 +1594,7 @@ section.contactos img.icon {
     grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 32px;
+    gap: 40px;
 }
 
 .card-bilhete {
