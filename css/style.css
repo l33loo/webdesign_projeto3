@@ -1611,12 +1611,24 @@ section.bilhetes .container {
     justify-content: center;
 
     @media screen and (min-width: 650px) {
+        padding: 5vw 0 10vw;
+    }
+
+    @media screen and (min-width: 1000px) {
         padding: 3vw 0 7vw;
     }
 }
 
 .card-bilhete-inner {
     width: 60%;
+
+    @media screen and (min-width: 650px) {
+        width: 65%;
+    }
+
+    @media screen and (min-width: 1000px) {
+        width: 60%;
+    }
 }
 
 .card-bilhete-titulo {
@@ -1625,8 +1637,13 @@ section.bilhetes .container {
     font-size: 2rem;
     color:#0C0F0A;
     text-transform: uppercase;
+    padding: 0;
 
     @media screen and (min-width: 650px) {
+        font-size: 1.75rem;
+    }
+
+    @media screen and (min-width: 1000px) {
         font-size: 3.125rem;
     }
 }
@@ -1635,7 +1652,7 @@ section.bilhetes .container {
     font-size: 1.5rem;
     text-wrap: wrap;
 
-    @media screen and (min-width: 650px) {
+    @media screen and (min-width: 1000px) {
         font-size: 2rem;
     }
 }
@@ -1646,7 +1663,7 @@ section.bilhetes .container {
     font-size: 4rem;
     padding: 45px 0 10px;
 
-    @media screen and (min-width: 650px) {
+    @media screen and (min-width: 1000px) {
         font-size: 6.25rem;
         padding: 50px 0 30px;
     }
@@ -1660,7 +1677,7 @@ section.bilhetes .container {
 .card-bilhete .btn {
     margin: 32px auto 0 !important;
 
-    @media screen and (min-width: 650px) {
+    @media screen and (min-width: 1000px) {
         margin: 64px auto 0;
     }
 }
