@@ -1589,44 +1589,53 @@ section.contactos img.icon {
 } */
 
 /**** Bilhetes ***/
-.container-bilhetes {
-    display: flex;
+.bilhetes .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
 }
 
-.cards-bilhete-1 {
+.card-bilhete {
     background-color: white;
     display: block;
-    width: 380px;
-    height: 700px; 
+    padding: 3vw 7vw 7vw;
+    text-align: center;
 }
 
-.cards-bilhete-2 {
-    background-color: white;
-    display: block;
-    width: 380px;
-    height: 700px; 
+.card-bilhete-titulo {
+    font-family: Lekton, sans-serif;
+    font-weight: bold;
+    font-size: 3.125rem;
+    color:#0C0F0A;
+    text-transform: uppercase;
 }
 
-.preco {
-    padding:0;
-    margin:0;
-    font-size: 45px;
+.card-bilhete-texto-p {
+    font-size: 2rem;
+    text-wrap: wrap;
 }
 
-.hr{
-    width: 70%;
+.card-bilhete-preco {
+    /* padding:0;
+    margin:0; */
+    font-size: 6.25rem;
+    padding: 50px 0 30px;
+}
+
+.card-bilhete hr{
+    margin: 0;
+    
 }
 
 
-.tipo-bilhete {
+/* .card-bilhete-titulo {
     text-align: center;
     padding-top: 50px;
     font-size: 2.5rem;
     margin: 0;
-}
+} */
 
 /*** Formulário Compra ****/
 .form {
