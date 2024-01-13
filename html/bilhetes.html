@@ -7,6 +7,79 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="bg-night">
+    <nav class="white">
+        <div class="nav-section">
+            <div class="nav-container">
+                <a href="../index.html"><img class="logo" src="../img/logos/Logo-H-B.svg"></a>
+                <menu class="nav-menu-full">
+                    <li>
+                        <a href="noticias.html">
+                            Notícias
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cartaz.html">
+                            Cartaz
+                        </a>
+                    </li>
+                    <li>
+                        <a href="festival.html">
+                            Festival
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contactos.html">
+                            Contactos
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn btn-pink" href="bilhetes.html">
+                            Bilhetes
+                        </a>
+                    </li>
+                </menu>
+                <button id="nav-menu-btn-open">
+                    <img src="../img/icons/menu.svg" alt="Abrir menu">
+                </button>
+                <div id="nav-menu-collapsible" class="hide">
+                    <div class="nav-menu-btn">
+                        <button id="nav-menu-btn-close">
+                            <img src="../img/icons/x-bold.svg" alt="Abrir menu">
+                        </button>
+                    </div>
+                    <div class="menu-wrap">
+                        <menu>
+                            <li>
+                                <a href="noticias.html">
+                                    Notícias
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cartaz.html">
+                                    Cartaz
+                                </a>
+                            </li>
+                            <li>
+                                <a href="festival.html">
+                                    Festival
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contactos.html">
+                                    Contactos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="bilhetes.html">
+                                    Bilhetes
+                                </a>
+                            </li>
+                        </menu>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     <header class="half half-bilhetes bg-night">
         <div class="overlay"></div>
         <div class="section-header">
@@ -123,4 +196,19 @@
         </div>
     </footer>
 </body>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const buttonClose = document.getElementById('nav-menu-btn-close');
+        buttonClose.addEventListener("click", (event) => {
+            const collMenu = document.getElementById('nav-menu-collapsible');
+            collMenu.classList.replace("display", "hide");
+        });
+
+        const buttonOpen = document.getElementById('nav-menu-btn-open');
+        buttonOpen.addEventListener("click", (event) => {
+            const collMenu = document.getElementById('nav-menu-collapsible');
+            collMenu.classList.replace("hide", "display");
+        });
+    });
+</script>
 </html>
