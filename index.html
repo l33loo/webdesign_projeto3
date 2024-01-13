@@ -12,7 +12,7 @@
         <div class="nav-section">
             <div class="nav-container">
                 <a href="#"><img class="logo" src="img/logos/Logo-H-B.svg"></a>
-                <ul class="nav-menu-full">
+                <menu class="nav-menu-full">
                     <li>
                         <a href="html/noticias.html">
                             Notícias
@@ -38,10 +38,46 @@
                             Bilhetes
                         </a>
                     </li>
-                </ul>
-                <button class="nav-menu-collapsed-btn">
+                </menu>
+                <button id="nav-menu-btn-open">
                     <img src="img/icons/menu.svg" alt="Abrir menu">
                 </button>
+                <div id="nav-menu-collapsible" class="hide">
+                    <div class="nav-menu-btn">
+                        <button id="nav-menu-btn-close">
+                            <img src="img/icons/x-bold.svg" alt="Abrir menu">
+                        </button>
+                    </div>
+                    <div class="menu-wrap">
+                        <menu>
+                            <li>
+                                <a href="html/noticias.html">
+                                    Notícias
+                                </a>
+                            </li>
+                            <li>
+                                <a href="html/cartaz.html">
+                                    Cartaz
+                                </a>
+                            </li>
+                            <li>
+                                <a href="html/festival.html">
+                                    Festival
+                                </a>
+                            </li>
+                            <li>
+                                <a href="html/contactos.html">
+                                    Contactos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="html/bilhetes.html">
+                                    Bilhetes
+                                </a>
+                            </li>
+                        </menu>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -252,4 +288,19 @@
         </div>
     </footer>
 </body>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const buttonClose = document.getElementById('nav-menu-btn-close');
+        buttonClose.addEventListener("click", (event) => {
+            const collMenu = document.getElementById('nav-menu-collapsible');
+            collMenu.classList.replace("display", "hide");
+        });
+
+        const buttonOpen = document.getElementById('nav-menu-btn-open');
+        buttonOpen.addEventListener("click", (event) => {
+            const collMenu = document.getElementById('nav-menu-collapsible');
+            collMenu.classList.replace("hide", "display");
+        });
+    });
+</script>
 </html>
